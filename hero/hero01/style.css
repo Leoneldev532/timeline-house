@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+*{
+    font-family: "EB Garamond", serif;
+    box-sizing: border-box; /* Toujours utile */
+}
+body {
+  background-color: #0d0d0d;
+  margin: 0;
+  color: #fff;
+  font-family: 'EB Garamond', serif;
+  overflow: hidden;
+}
+#wrap {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999;
+}
+
+.projects-container {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Doit contenir au moins la hauteur max du sol */
+}
+
+.project-item {
+  position: absolute; /* Indispensable pour utiliser le translate3d en X et Y */
+  top: 0;
+  left: 0;
+  will-change: transform;
+}
+
+.addblur {
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+.removeblur {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.image-mask {
+  height: 100%;
+  overflow: hidden;
+  will-change: width;
+  flex-shrink: 0;
+  background-color: #000; /* Bloque la visibilité des images situées en dessous */
+}
+.image-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-item {
+    position: absolute;
+    will-change: transform, width, height;
+}
+.content-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.image-mask {
+    width: 100%;
+    height: 100%;
+    will-change: transform;
+    transform-origin: center;
+}
+
+.project-metadata {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 40;
+}
+ 
+.roman {
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 14px;
+}
+ 
+.title {
+  font-size: 16px;
+}
+ 
+.content-wrapper {
+  background-color: transparent;
+}
+ 
+.hero__anim-background-Project-staircase-show{
+  transition: all ease 0.5s;
+}
