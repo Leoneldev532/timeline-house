@@ -1,0 +1,88 @@
+
+    @font-face {
+        font-family: 'IvarDisplay';
+        src: url('./assets/font/IvarDisplay-RegularCondensed.woff2');
+    }
+
+    @font-face {
+        font-family: 'Helvetica-neue-medium';
+        src: url('./assets/fonts/HelveticaNeueMedium.otf');
+    }
+ 
+
+    h1,
+    h2,
+    h3,
+    h4,a {
+        font-family: 'IvarDisplay';
+    }
+
+    span,
+    p {
+        font-family: "Helvetica-neue-medium", sans-serif;
+    }
+
+   
+    .font-ivarDisplay{
+         font-family: 'IvarDisplay' !important; 
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .title-menu-project-top{
+        overflow: hidden;
+    }
+     .title-menu-project-bottom{
+        overflow: hidden;
+    }
+
+    .lines-item-project-letter{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+    .title-menu-project-bottom span{
+        
+         font-family: 'IvarDisplay' !important; 
+    }
+
+    /* ============================================================
+       COPYRIGHT SECTION STYLES
+    ============================================================ */
+    .copyright-section {
+        opacity: 0;
+        pointer-events: none;
+        clip-path: inset(0% 0% 100% 0%);
+    }
+
+    .copyright-text {
+        display: block;
+        height: 1.5em;
+        overflow: hidden;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+        font-weight: 500;
+        letter-spacing: 0.05em;
+    }
+
+    .copyright-link {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 2px;
+    }
+
+    .copyright-link-text {
+        display: block;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+        font-weight: 500;
+        letter-spacing: 0.05em;
+    }
+
+    .copyright-link:hover .copyright-link-text {
+        color: inherit;
+    }
+
+    .list-item {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}

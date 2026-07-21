@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWPROD - Maison de production audiovisuelle</title>
+    <meta name="description"
+        content="Découvrez l'univers créatif de NWPROD : une maison de production proposant des projets audiovisuels immersifs tels que PRISM, ECHOES et NEXUS.">
+    <meta name="robots" content="index, follow">
+
+    <script>
+        if ("scrollRestoration" in history) {
+            history.scrollRestoration = "manual";
+        }
+        window.scrollTo(0, 0);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.25/dist/lenis.css">
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body class="bg-red-600 ">
+
+    <main class="  h-full w-full  min-h-screen  bg-red-600  relative">
+
+        <div class="min-h-screen w-full inset-0 fixed p-8  z-[100] pointer-events-none">
+            <div
+                class=" relative custom-cursor text-sm inline-block p-1 bg-red-600   pointer-events-none  text-black font-bold uppercase">
+                <span class="custom-cursor-content w-full shrink h-full">scroll</span>
+            </div>
+        </div>
+
+        <header class="header  fixed z-50  w-full">
+
+            <div class="line-1 flex items-center  p-8 justify-between w-full">
+
+                <div class="overflow-hidden text-red-600 ">
+                    <a href="#" aria-label="Contacts"
+                        class="nav-link inline-block overflow-hidden text-3xl h-full uppercase ">
+                        <span
+                            class="nav-link__track flex flex-col h-[1.2em] overflow-hidden transition-transform duration-300">
+                            <span class="nav-link__text font-ivarDisplay h-[1.8em] leading-[1.2em]">
+                                Contacts
+                            </span>
+                            <span class="nav-link__text font-ivarDisplay h-[1.8em] leading-[1.2em]" aria-hidden="true">
+                                Contacts
+                            </span>
+                        </span>
+                    </a>
+
+                </div>
+
+
+                <div class="overflow-hidden text-red-600 font-ivarDisplay">
+                    <button data-link-open-hamburger-menu="1" aria-label="Contacts"
+                        class="nav-link inline-block overflow-hidden text-3xl h-auto uppercase ">
+                        <span
+                            class="nav-link__track flex flex-col h-[1.2em] overflow-hidden transition-transform duration-300">
+                            <span class="nav-link__text font-ivarDisplay h-[1.8em] leading-[1.2em]">
+                                Menu
+                            </span>
+                            <span class="nav-link__text font-ivarDisplay h-[1.8em] leading-[1.2em]" aria-hidden="true">
+                                Menu
+                            </span>
+                        </span>
+                    </button>
+                </div>
+
+
+
+                <a href="/" aria-label="Accueil" class="absolute  inset-[45%] ">
+                    <div class="h-32 logo-img w-32 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 1280.000000 1101.000000"
+                            preserveAspectRatio="xMidYMid meet">
+
+                            <g transform="translate(0.000000,1101.000000) scale(0.100000,-0.100000)"
+                                class="w-full svg-logo h-full" fill="#000000" stroke="none">
+                                <path
+                                    d="M11350 10996 c-295 -62 -1591 -508 -1855 -638 -48 -24 -85 -57 -85 -75 0 -7 -6 -13 -14 -13 -19 0 -31 -21 -126 -220 -180 -379 -316 -608 -523 -886 -175 -235 -192 -261 -252 -377 l-52 -98 -28 37 c-16 21 -51 47 -84 63 -52 24 -66 26 -196 26 -129 0 -147 -2 -225 -29 -47 -16 -80 -31 -75 -32 6 -2 60 -10 121 -19 189 -26 254 -55 270 -119 5 -20 -1 -34 -25 -61 -35 -41 -36 -42 -12 -110 14 -41 24 -54 57 -70 23 -12 38 -27 36 -36 -1 -8 19 -39 44 -69 97 -113 205 -403 300 -810 71 -300 71 -292 33 -460 -43 -199 -108 -347 -180 -416 -45 -41 -73 -57 -159 -89 l-105 -38 -285 -8 c-157 -4 -318 -12 -358 -19 -45 -7 -131 -35 -226 -74 l-153 -63 -48 25 c-73 36 -231 74 -287 68 -40 -4 -52 -1 -85 23 -122 89 -335 373 -491 654 -33 60 -67 116 -75 125 -9 9 -19 30 -22 45 -5 19 -11 25 -18 18 -13 -13 -96 76 -97 104 0 11 18 49 39 85 22 36 38 67 36 68 -2 2 -37 -14 -79 -36 l-75 -39 -26 27 c-14 14 -25 30 -25 34 0 5 23 39 50 76 28 37 50 71 50 75 0 3 -38 -13 -84 -38 -77 -41 -85 -43 -100 -29 -15 15 -11 22 51 84 37 37 65 70 62 73 -6 5 -122 -32 -173 -56 -27 -13 -30 -12 -52 16 l-23 29 21 23 c24 26 24 26 -20 14 -17 -5 -32 -7 -32 -4 0 2 16 23 35 46 19 22 33 42 31 44 -2 2 -28 -5 -57 -17 -65 -24 -65 -24 -73 -4 -4 10 5 27 26 46 38 36 26 46 -28 23 -20 -8 -39 -13 -41 -11 -3 2 12 26 32 52 21 27 33 50 28 51 -5 2 -35 -5 -66 -16 l-57 -20 -15 22 c-14 20 -13 23 16 53 30 31 30 32 10 39 -11 3 -36 3 -56 -1 -19 -3 -35 -4 -35 -1 0 3 23 22 52 42 43 31 55 36 70 26 31 -19 22 12 -13 43 -17 15 -29 29 -27 31 2 2 28 5 57 6 51 3 55 1 83 -34 26 -33 35 -37 75 -37 24 0 53 -5 65 -11 28 -15 31 -6 7 24 -14 18 -30 27 -49 27 -23 0 -35 9 -59 44 -31 44 -70 66 -120 66 -16 0 -43 15 -71 41 -25 22 -62 49 -82 60 -21 11 -38 24 -38 31 0 6 -7 16 -15 22 -9 6 -17 29 -19 51 -3 34 -7 40 -27 41 -13 1 -46 7 -72 14 l-48 13 22 23 c21 23 21 24 3 24 -10 0 -34 -9 -52 -20 -40 -24 -84 -27 -76 -5 9 22 -23 19 -53 -5 -30 -23 -46 -25 -76 -8 -12 7 -35 17 -50 23 -36 13 -236 232 -243 265 -13 67 -24 75 -109 81 -44 4 -107 14 -140 23 -98 25 -115 22 -168 -32 -51 -52 -63 -88 -25 -79 12 3 29 2 39 -3 15 -8 16 -15 8 -45 -6 -20 -9 -57 -7 -83 l3 -47 30 54 30 55 5 -55 5 -54 18 33 c27 49 53 43 47 -11 -1 -13 4 -18 17 -17 51 6 56 2 50 -39 -7 -54 5 -69 28 -35 17 26 18 27 31 9 8 -11 12 -27 8 -37 -6 -20 6 -24 24 -6 15 15 42 -7 42 -34 0 -15 5 -18 19 -13 25 8 35 -9 21 -36 -14 -26 -6 -36 15 -19 13 10 15 9 15 -9 0 -18 6 -21 46 -21 26 0 43 -4 39 -10 -3 -5 -3 -21 1 -35 5 -21 12 -25 44 -25 43 0 49 -9 42 -63 -4 -34 -7 -38 -26 -32 -33 11 -107 12 -149 2 -28 -7 -46 -21 -73 -58 -59 -80 -66 -83 -133 -44 -79 47 -176 78 -215 69 -17 -3 -66 -24 -108 -45 -88 -44 -94 -45 -120 -22 -21 19 -24 6 -4 -19 7 -10 26 -19 42 -20 42 -4 143 11 191 28 40 15 43 14 102 -16 44 -22 61 -36 61 -50 0 -25 -30 -27 -31 -2 0 13 -3 12 -11 -5 -14 -28 -28 -30 -28 -3 0 28 -17 25 -24 -5 -4 -16 -11 -22 -21 -19 -8 4 -15 1 -15 -6 0 -10 -4 -9 -16 1 -13 10 -17 10 -25 -2 -8 -12 -10 -12 -18 0 -7 11 -10 9 -16 -10 -7 -22 -8 -22 -22 -3 -8 11 -11 29 -8 42 8 31 -10 20 -36 -22 l-19 -31 0 40 -1 40 -22 -26 c-12 -14 -30 -29 -39 -32 -10 -3 -20 -19 -24 -34 -3 -15 -21 -41 -39 -58 -19 -16 -36 -41 -40 -54 -7 -23 -6 -23 36 -15 24 5 82 7 129 5 77 -2 93 1 165 31 80 33 81 33 235 32 87 -1 175 -7 200 -14 25 -7 84 -15 132 -19 l87 -6 53 -52 c30 -29 59 -53 65 -53 7 0 24 -16 39 -35 14 -19 31 -35 38 -35 21 -1 73 -55 95 -97 12 -24 25 -43 30 -43 5 0 20 -27 34 -60 15 -33 32 -60 39 -60 8 0 22 -16 33 -36 10 -20 29 -44 41 -53 12 -10 26 -34 29 -55 4 -20 15 -42 25 -49 9 -6 27 -36 40 -64 12 -29 28 -53 35 -53 7 0 26 -33 41 -72 23 -57 34 -74 52 -76 12 -2 22 -9 22 -15 0 -7 14 -30 30 -51 24 -32 30 -50 30 -90 0 -73 31 -190 99 -380 90 -249 114 -356 114 -496 0 -109 -1 -118 -28 -160 -66 -104 -145 -320 -145 -394 0 -24 -12 -46 -45 -85 -25 -30 -53 -67 -61 -82 -11 -22 -22 -29 -44 -29 -23 0 -45 -14 -90 -55 -33 -30 -69 -55 -80 -55 -12 0 -33 -9 -49 -21 -17 -12 -55 -24 -102 -30 -47 -7 -79 -16 -86 -27 -19 -24 -17 -167 3 -196 20 -32 12 -36 -95 -43 -105 -7 -202 6 -411 54 -183 42 -220 59 -590 273 -140 82 -325 187 -410 233 -85 47 -177 103 -205 124 -27 21 -56 38 -65 38 -10 0 -16 12 -18 33 -3 25 -13 40 -45 63 -46 33 -89 36 -154 8 -29 -12 -37 -11 -83 11 -66 31 -93 63 -120 145 -24 72 -34 74 -64 11 -23 -49 -20 -83 14 -154 17 -35 30 -66 30 -68 0 -2 -13 -4 -29 -4 -16 0 -170 -18 -343 -39 -172 -22 -493 -58 -713 -80 -403 -40 -505 -55 -505 -72 0 -5 -13 -9 -29 -9 -15 0 -39 -8 -52 -19 -13 -10 -37 -25 -54 -34 -80 -42 -860 -761 -1061 -978 -77 -83 -84 -95 -132 -216 -61 -151 -84 -245 -80 -321 4 -73 24 -79 32 -10 4 29 10 58 14 65 11 17 250 63 327 63 151 0 255 -18 405 -72 131 -47 154 -59 242 -125 136 -104 265 -243 392 -423 60 -85 121 -171 136 -190 15 -19 35 -60 45 -90 19 -57 44 -104 52 -96 3 2 -2 39 -11 82 -9 42 -14 79 -12 81 2 2 100 20 217 39 528 86 528 87 800 91 255 5 257 5 425 -27 158 -30 181 -37 349 -111 l180 -80 190 -164 c121 -104 199 -179 216 -207 29 -49 100 -108 131 -108 16 0 9 10 -31 46 -95 85 -95 80 10 253 49 83 102 165 117 183 15 17 90 86 167 152 130 111 150 125 290 192 l151 72 154 7 155 7 165 -57 c131 -44 478 -195 536 -233 7 -4 37 -52 68 -107 31 -55 56 -94 56 -86 0 7 -16 61 -37 120 l-36 107 67 199 c37 109 86 239 108 289 49 112 76 189 134 381 61 199 136 346 249 487 48 60 91 108 95 108 5 0 23 -17 40 -39 17 -21 53 -54 78 -72 26 -19 82 -64 126 -102 116 -100 245 -155 556 -238 l125 -34 -61 -11 c-34 -6 -76 -21 -93 -33 -18 -13 -55 -32 -84 -42 -115 -42 -245 -157 -296 -261 -17 -35 -38 -97 -46 -138 -8 -41 -22 -100 -31 -132 -20 -69 -14 -112 26 -167 38 -51 135 -124 219 -164 l63 -30 207 9 c282 12 644 8 673 -7 72 -38 275 -250 354 -369 23 -36 81 -108 128 -161 133 -151 282 -227 377 -194 37 14 39 13 80 -21 50 -41 85 -44 160 -10 52 23 112 86 148 154 16 30 27 217 13 226 -6 3 -8 23 -5 44 5 39 -12 87 -39 109 -10 9 -13 1 -13 -42 0 -29 -4 -57 -8 -62 -5 -4 -24 10 -44 32 -65 74 -116 125 -120 121 -3 -2 3 -18 11 -35 21 -40 21 -69 -1 -67 -16 1 -18 -8 -15 -72 2 -40 -1 -72 -6 -72 -6 0 -48 11 -96 25 -47 14 -110 28 -140 31 -58 7 -113 34 -123 59 -7 19 38 62 72 71 14 3 39 1 56 -5 40 -14 48 -7 23 20 -23 25 -67 49 -90 49 -10 0 -29 11 -43 24 -27 26 -91 35 -137 21 -18 -6 -34 10 -107 107 -103 137 -287 416 -287 434 0 8 19 23 43 35 71 36 196 147 222 198 34 64 49 81 72 81 27 0 411 -319 507 -421 131 -139 436 -527 667 -849 123 -171 291 -477 498 -910 70 -146 151 -301 180 -345 107 -159 301 -335 1001 -910 190 -156 399 -331 465 -389 66 -58 125 -106 131 -106 7 0 19 12 29 26 14 21 14 28 3 41 -7 9 -227 222 -488 473 -624 600 -700 682 -843 908 -103 164 -112 188 -158 410 -37 183 -47 217 -106 350 -35 81 -101 235 -145 342 -44 107 -104 241 -134 297 -30 56 -54 111 -54 122 0 12 -5 18 -12 16 -7 -3 -20 7 -29 22 -9 16 -42 72 -74 126 l-58 98 19 35 c18 33 18 36 1 66 l-17 30 54 -6 c53 -7 55 -6 69 21 8 15 17 42 20 60 5 26 2 34 -19 48 -13 9 -23 23 -22 32 4 20 -147 82 -274 114 -103 25 -123 46 -105 106 12 40 4 52 -21 29 -18 -16 -23 -12 -96 76 -46 57 -76 102 -76 116 0 14 -4 21 -11 17 -14 -9 -59 34 -59 57 0 10 -6 18 -13 18 -19 0 -127 113 -127 133 0 11 -5 15 -11 11 -6 -3 -41 23 -78 60 l-67 67 9 54 c6 30 7 58 4 62 -4 4 -22 -8 -40 -25 l-33 -32 -63 56 c-61 56 -63 59 -59 101 2 23 1 43 -3 43 -3 0 -16 -11 -29 -25 -13 -14 -28 -25 -32 -25 -5 0 -50 41 -99 91 -85 87 -109 127 -109 182 0 24 -17 22 -25 -3 -6 -20 -8 -19 -42 11 -20 17 -87 55 -149 84 -94 45 -114 58 -120 80 -6 23 -8 25 -21 12 -13 -13 -25 -10 -101 24 -48 21 -92 39 -99 39 -13 0 -171 117 -219 162 -18 17 -35 43 -38 60 -5 25 -9 28 -20 19 -17 -15 -40 -5 -74 32 l-23 25 48 4 c28 3 56 0 68 -7 11 -7 37 -17 57 -24 41 -14 78 -2 78 25 0 8 -4 13 -9 10 -12 -8 -47 21 -38 31 17 17 386 16 537 -2 332 -38 837 -150 1263 -280 l87 -26 71 -105 c40 -57 75 -102 78 -99 3 3 -18 49 -45 102 l-50 97 78 201 c102 258 144 345 278 580 l111 194 174 169 174 169 207 109 c114 60 219 114 234 121 15 6 150 46 302 87 l275 76 209 10 c115 5 255 10 311 10 l102 0 50 -76 c28 -42 54 -87 57 -100 3 -13 10 -21 15 -18 27 16 -11 127 -68 197 -31 37 -75 125 -158 312 l-115 260 -33 183 -34 182 23 172 c42 308 149 602 304 833 65 95 219 299 230 303 6 2 47 -19 92 -46 46 -27 93 -55 106 -61 l23 -12 -17 26 c-10 15 -52 50 -93 77 -112 75 -424 391 -545 553 -77 102 -116 169 -187 312 l-90 183 -16 157 c-15 147 -15 168 1 303 19 158 13 145 132 331 l42 65 78 -8 c44 -4 91 -10 107 -12 15 -3 27 -2 27 3 0 20 -34 33 -146 57 -109 24 -143 27 -394 30 -205 2 -292 0 -340 -10z m-5880 -2807 c14 -25 15 -25 -37 -33 -39 -6 -41 -5 -35 17 10 41 54 51 72 16z m-696 -44 c21 -32 22 -52 1 -35 -12 10 -16 9 -21 -4 -7 -19 -42 -12 -60 12 -9 13 -12 13 -17 -2 -4 -9 -12 -16 -19 -16 -21 1 60 70 81 70 10 0 26 -11 35 -25z m573 -3227 c-3 -7 -5 -2 -5 12 0 14 2 19 5 13 2 -7 2 -19 0 -25z m2710 -1339 c-9 -6 -50 -12 -90 -15 -69 -5 -71 -4 -42 10 35 17 161 22 132 5z" />
+                        </svg>
+
+                    </div>
+                </a>
+
+
+            </div>
+
+        </header>
+
+
+        <nav class="container-hamburger-menu w-full absolute   h-auto z-10 left-0  overflow-hidden  min-h-screen">
+
+            <div
+                class="hamburger-menu w-full p-8  relative  lg:-top-[70px]  bg-red-600 flex flex-col justify-start items-center min-h-screen ">
+
+                <span
+                    class="title-hamburger-menu overflow-hidden md:pt-0   pt-[10%] text-[12vw]  text-black ">NWPROD</span>
+
+                <div class="flex flex-col gap-16  w-full  justify-center items-center lg:items-end">
+
+
+
+
+
+
+
+                    <div
+                        class="w-full flex project-menu-item lg:w-10/12 lg:flex-row flex-col  justify-between items-center">
+                        <div class="flex flex-col id-container w-16 h-8 overflow-hidden">
+                            <span class="text-xl h-full shrink-0 w-full inline-block">01</span>
+                        </div>
+
+                        <div class="flex justify-center items-center w-full">
+                            <div class="relative w-full lg:w-7/12 layer-container h-[30vh] relative">
+
+                                <div class="layer-1 w-full h-full absolute z-10">
+                                    <img src="https://cdn.cosmos.so/20420886-807a-450d-834f-2e73a2af15f1?format=webp"
+                                        class="w-full h-full object-cover" alt="Illustration du projet PRISM">
+                                </div>
+
+                                <div class="layer-2 w-full h-full bg-red-100  absolute z-10">
+                                    <img src="https://images.unsplash.com/photo-1518601794912-1af91724e528?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJsYWNrJTIwcGVvcGxlfGVufDB8fDB8fHww"
+                                        class="w-full h-full object-cover" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="flex uppercase pt-6 md:pt-0 w-1/2 flex-col justify-center items-center ">
+
+                            <div class="flex flex-col title-menu-project-top w-full h-8 overflow-hidden">
+                                <span
+                                    class="text-xl h-full shrink-0 w-full text-center lg:text-left inline-block">PRISM</span>
+                            </div>
+
+                            <h3
+                                class="h-8  w-full title-menu-project-bottom font-ivarDisplay flex flex-col overflow-hidden ">
+                                <span
+                                    class="text-4xl shrink-0  font-ivarDisplay text-center lg:text-left  inline-block text-balance">PRISM</span>
+
+                            </h3>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div
+                        class="w-full flex project-menu-item lg:w-10/12 lg:flex-row flex-col  justify-between items-center">
+                        <div class="flex flex-col id-container w-16 h-8 overflow-hidden">
+                            <span class="text-xl h-full shrink-0 w-full inline-block">02</span>
+                        </div>
+
+                        <div class="flex justify-center items-center w-full">
+                            <div class="relative w-full lg:w-7/12 layer-container h-[30vh] relative">
+
+                                <div class="layer-1 w-full h-full absolute z-10">
+                                    <img src="https://images.unsplash.com/photo-1782058982916-0a29826a07c8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMXx8fGVufDB8fHx8fA%3D%3D"
+                                        class="w-full h-full object-cover" alt="Aperçu du projet ECHOES">
+                                </div>
+
+                                <div class="layer-2 w-full h-full bg-red-100  absolute z-10">
+                                    <img src="https://images.unsplash.com/photo-1518882570151-157128e78fa1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJsYWNrJTIwcGVvcGxlfGVufDB8fDB8fHww"
+                                        class="w-full h-full object-cover" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="flex uppercase pt-6 md:pt-0 w-1/2 flex-col justify-center items-center ">
+
+                            <div class="flex flex-col title-menu-project-top w-full h-8 overflow-hidden">
+                                <span
+                                    class="text-xl h-full shrink-0 w-full text-center lg:text-left inline-block">ECHOES</span>
+                            </div>
+
+                            <h3
+                                class="h-8  w-full title-menu-project-bottom font-ivarDisplay flex flex-col overflow-hidden ">
+                                <span
+                                    class="text-4xl shrink-0  font-ivarDisplay text-center lg:text-left  inline-block text-balance">ECHOES</span>
+
+                            </h3>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div
+                        class="w-full flex project-menu-item lg:w-10/12 lg:flex-row flex-col  justify-between items-center">
+                        <div class="flex flex-col id-container w-16 h-8 overflow-hidden">
+                            <span class="text-xl h-full shrink-0 w-full inline-block">03</span>
+                        </div>
+
+                        <div class="flex justify-center items-center w-full">
+                            <div class="relative w-full md:w-7/12 layer-container h-[30vh] relative">
+
+                                <div class="layer-1 w-full h-full absolute z-10">
+                                    <img src="https://images.unsplash.com/photo-1773332611528-566f16120979?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        class="w-full h-full object-cover" alt="">
+                                </div>
+
+                                <div class="layer-2 w-full h-full bg-red-100  absolute z-10">
+                                    <img src="https://plus.unsplash.com/premium_photo-1664267832242-cc73a2fa4903?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJsYWNrJTIwcGVvcGxlfGVufDB8fDB8fHww"
+                                        class="w-full h-full object-cover" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="flex uppercase pt-6 md:pt-0 w-1/2 flex-col justify-center items-center ">
+
+                            <div class="flex flex-col title-menu-project-top w-full h-8 overflow-hidden">
+                                <span
+                                    class="text-xl h-full shrink-0 w-full text-center lg:text-left inline-block">NEXUS</span>
+                            </div>
+
+                            <h3
+                                class="h-8  w-full title-menu-project-bottom font-ivarDisplay flex flex-col overflow-hidden ">
+                                <span
+                                    class="text-4xl shrink-0  font-ivarDisplay text-center lg:text-left  inline-block text-balance">NEXUS</span>
+
+                            </h3>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="w-[15vw] mt-20 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 1280.000000 1101.000000"
+                        preserveAspectRatio="xMidYMid meet">
+
+                        <g transform="translate(0.000000,1101.000000) scale(0.100000,-0.100000)" class="w-full  h-full"
+                            fill="#000000" stroke="none">
+                            <path
+                                d="M11350 10996 c-295 -62 -1591 -508 -1855 -638 -48 -24 -85 -57 -85 -75 0 -7 -6 -13 -14 -13 -19 0 -31 -21 -126 -220 -180 -379 -316 -608 -523 -886 -175 -235 -192 -261 -252 -377 l-52 -98 -28 37 c-16 21 -51 47 -84 63 -52 24 -66 26 -196 26 -129 0 -147 -2 -225 -29 -47 -16 -80 -31 -75 -32 6 -2 60 -10 121 -19 189 -26 254 -55 270 -119 5 -20 -1 -34 -25 -61 -35 -41 -36 -42 -12 -110 14 -41 24 -54 57 -70 23 -12 38 -27 36 -36 -1 -8 19 -39 44 -69 97 -113 205 -403 300 -810 71 -300 71 -292 33 -460 -43 -199 -108 -347 -180 -416 -45 -41 -73 -57 -159 -89 l-105 -38 -285 -8 c-157 -4 -318 -12 -358 -19 -45 -7 -131 -35 -226 -74 l-153 -63 -48 25 c-73 36 -231 74 -287 68 -40 -4 -52 -1 -85 23 -122 89 -335 373 -491 654 -33 60 -67 116 -75 125 -9 9 -19 30 -22 45 -5 19 -11 25 -18 18 -13 -13 -96 76 -97 104 0 11 18 49 39 85 22 36 38 67 36 68 -2 2 -37 -14 -79 -36 l-75 -39 -26 27 c-14 14 -25 30 -25 34 0 5 23 39 50 76 28 37 50 71 50 75 0 3 -38 -13 -84 -38 -77 -41 -85 -43 -100 -29 -15 15 -11 22 51 84 37 37 65 70 62 73 -6 5 -122 -32 -173 -56 -27 -13 -30 -12 -52 16 l-23 29 21 23 c24 26 24 26 -20 14 -17 -5 -32 -7 -32 -4 0 2 16 23 35 46 19 22 33 42 31 44 -2 2 -28 -5 -57 -17 -65 -24 -65 -24 -73 -4 -4 10 5 27 26 46 38 36 26 46 -28 23 -20 -8 -39 -13 -41 -11 -3 2 12 26 32 52 21 27 33 50 28 51 -5 2 -35 -5 -66 -16 l-57 -20 -15 22 c-14 20 -13 23 16 53 30 31 30 32 10 39 -11 3 -36 3 -56 -1 -19 -3 -35 -4 -35 -1 0 3 23 22 52 42 43 31 55 36 70 26 31 -19 22 12 -13 43 -17 15 -29 29 -27 31 2 2 28 5 57 6 51 3 55 1 83 -34 26 -33 35 -37 75 -37 24 0 53 -5 65 -11 28 -15 31 -6 7 24 -14 18 -30 27 -49 27 -23 0 -35 9 -59 44 -31 44 -70 66 -120 66 -16 0 -43 15 -71 41 -25 22 -62 49 -82 60 -21 11 -38 24 -38 31 0 6 -7 16 -15 22 -9 6 -17 29 -19 51 -3 34 -7 40 -27 41 -13 1 -46 7 -72 14 l-48 13 22 23 c21 23 21 24 3 24 -10 0 -34 -9 -52 -20 -40 -24 -84 -27 -76 -5 9 22 -23 19 -53 -5 -30 -23 -46 -25 -76 -8 -12 7 -35 17 -50 23 -36 13 -236 232 -243 265 -13 67 -24 75 -109 81 -44 4 -107 14 -140 23 -98 25 -115 22 -168 -32 -51 -52 -63 -88 -25 -79 12 3 29 2 39 -3 15 -8 16 -15 8 -45 -6 -20 -9 -57 -7 -83 l3 -47 30 54 30 55 5 -55 5 -54 18 33 c27 49 53 43 47 -11 -1 -13 4 -18 17 -17 51 6 56 2 50 -39 -7 -54 5 -69 28 -35 17 26 18 27 31 9 8 -11 12 -27 8 -37 -6 -20 6 -24 24 -6 15 15 42 -7 42 -34 0 -15 5 -18 19 -13 25 8 35 -9 21 -36 -14 -26 -6 -36 15 -19 13 10 15 9 15 -9 0 -18 6 -21 46 -21 26 0 43 -4 39 -10 -3 -5 -3 -21 1 -35 5 -21 12 -25 44 -25 43 0 49 -9 42 -63 -4 -34 -7 -38 -26 -32 -33 11 -107 12 -149 2 -28 -7 -46 -21 -73 -58 -59 -80 -66 -83 -133 -44 -79 47 -176 78 -215 69 -17 -3 -66 -24 -108 -45 -88 -44 -94 -45 -120 -22 -21 19 -24 6 -4 -19 7 -10 26 -19 42 -20 42 -4 143 11 191 28 40 15 43 14 102 -16 44 -22 61 -36 61 -50 0 -25 -30 -27 -31 -2 0 13 -3 12 -11 -5 -14 -28 -28 -30 -28 -3 0 28 -17 25 -24 -5 -4 -16 -11 -22 -21 -19 -8 4 -15 1 -15 -6 0 -10 -4 -9 -16 1 -13 10 -17 10 -25 -2 -8 -12 -10 -12 -18 0 -7 11 -10 9 -16 -10 -7 -22 -8 -22 -22 -3 -8 11 -11 29 -8 42 8 31 -10 20 -36 -22 l-19 -31 0 40 -1 40 -22 -26 c-12 -14 -30 -29 -39 -32 -10 -3 -20 -19 -24 -34 -3 -15 -21 -41 -39 -58 -19 -16 -36 -41 -40 -54 -7 -23 -6 -23 36 -15 24 5 82 7 129 5 77 -2 93 1 165 31 80 33 81 33 235 32 87 -1 175 -7 200 -14 25 -7 84 -15 132 -19 l87 -6 53 -52 c30 -29 59 -53 65 -53 7 0 24 -16 39 -35 14 -19 31 -35 38 -35 21 -1 73 -55 95 -97 12 -24 25 -43 30 -43 5 0 20 -27 34 -60 15 -33 32 -60 39 -60 8 0 22 -16 33 -36 10 -20 29 -44 41 -53 12 -10 26 -34 29 -55 4 -20 15 -42 25 -49 9 -6 27 -36 40 -64 12 -29 28 -53 35 -53 7 0 26 -33 41 -72 23 -57 34 -74 52 -76 12 -2 22 -9 22 -15 0 -7 14 -30 30 -51 24 -32 30 -50 30 -90 0 -73 31 -190 99 -380 90 -249 114 -356 114 -496 0 -109 -1 -118 -28 -160 -66 -104 -145 -320 -145 -394 0 -24 -12 -46 -45 -85 -25 -30 -53 -67 -61 -82 -11 -22 -22 -29 -44 -29 -23 0 -45 -14 -90 -55 -33 -30 -69 -55 -80 -55 -12 0 -33 -9 -49 -21 -17 -12 -55 -24 -102 -30 -47 -7 -79 -16 -86 -27 -19 -24 -17 -167 3 -196 20 -32 12 -36 -95 -43 -105 -7 -202 6 -411 54 -183 42 -220 59 -590 273 -140 82 -325 187 -410 233 -85 47 -177 103 -205 124 -27 21 -56 38 -65 38 -10 0 -16 12 -18 33 -3 25 -13 40 -45 63 -46 33 -89 36 -154 8 -29 -12 -37 -11 -83 11 -66 31 -93 63 -120 145 -24 72 -34 74 -64 11 -23 -49 -20 -83 14 -154 17 -35 30 -66 30 -68 0 -2 -13 -4 -29 -4 -16 0 -170 -18 -343 -39 -172 -22 -493 -58 -713 -80 -403 -40 -505 -55 -505 -72 0 -5 -13 -9 -29 -9 -15 0 -39 -8 -52 -19 -13 -10 -37 -25 -54 -34 -80 -42 -860 -761 -1061 -978 -77 -83 -84 -95 -132 -216 -61 -151 -84 -245 -80 -321 4 -73 24 -79 32 -10 4 29 10 58 14 65 11 17 250 63 327 63 151 0 255 -18 405 -72 131 -47 154 -59 242 -125 136 -104 265 -243 392 -423 60 -85 121 -171 136 -190 15 -19 35 -60 45 -90 19 -57 44 -104 52 -96 3 2 -2 39 -11 82 -9 42 -14 79 -12 81 2 2 100 20 217 39 528 86 528 87 800 91 255 5 257 5 425 -27 158 -30 181 -37 349 -111 l180 -80 190 -164 c121 -104 199 -179 216 -207 29 -49 100 -108 131 -108 16 0 9 10 -31 46 -95 85 -95 80 10 253 49 83 102 165 117 183 15 17 90 86 167 152 130 111 150 125 290 192 l151 72 154 7 155 7 165 -57 c131 -44 478 -195 536 -233 7 -4 37 -52 68 -107 31 -55 56 -94 56 -86 0 7 -16 61 -37 120 l-36 107 67 199 c37 109 86 239 108 289 49 112 76 189 134 381 61 199 136 346 249 487 48 60 91 108 95 108 5 0 23 -17 40 -39 17 -21 53 -54 78 -72 26 -19 82 -64 126 -102 116 -100 245 -155 556 -238 l125 -34 -61 -11 c-34 -6 -76 -21 -93 -33 -18 -13 -55 -32 -84 -42 -115 -42 -245 -157 -296 -261 -17 -35 -38 -97 -46 -138 -8 -41 -22 -100 -31 -132 -20 -69 -14 -112 26 -167 38 -51 135 -124 219 -164 l63 -30 207 9 c282 12 644 8 673 -7 72 -38 275 -250 354 -369 23 -36 81 -108 128 -161 133 -151 282 -227 377 -194 37 14 39 13 80 -21 50 -41 85 -44 160 -10 52 23 112 86 148 154 16 30 27 217 13 226 -6 3 -8 23 -5 44 5 39 -12 87 -39 109 -10 9 -13 1 -13 -42 0 -29 -4 -57 -8 -62 -5 -4 -24 10 -44 32 -65 74 -116 125 -120 121 -3 -2 3 -18 11 -35 21 -40 21 -69 -1 -67 -16 1 -18 -8 -15 -72 2 -40 -1 -72 -6 -72 -6 0 -48 11 -96 25 -47 14 -110 28 -140 31 -58 7 -113 34 -123 59 -7 19 38 62 72 71 14 3 39 1 56 -5 40 -14 48 -7 23 20 -23 25 -67 49 -90 49 -10 0 -29 11 -43 24 -27 26 -91 35 -137 21 -18 -6 -34 10 -107 107 -103 137 -287 416 -287 434 0 8 19 23 43 35 71 36 196 147 222 198 34 64 49 81 72 81 27 0 411 -319 507 -421 131 -139 436 -527 667 -849 123 -171 291 -477 498 -910 70 -146 151 -301 180 -345 107 -159 301 -335 1001 -910 190 -156 399 -331 465 -389 66 -58 125 -106 131 -106 7 0 19 12 29 26 14 21 14 28 3 41 -7 9 -227 222 -488 473 -624 600 -700 682 -843 908 -103 164 -112 188 -158 410 -37 183 -47 217 -106 350 -35 81 -101 235 -145 342 -44 107 -104 241 -134 297 -30 56 -54 111 -54 122 0 12 -5 18 -12 16 -7 -3 -20 7 -29 22 -9 16 -42 72 -74 126 l-58 98 19 35 c18 33 18 36 1 66 l-17 30 54 -6 c53 -7 55 -6 69 21 8 15 17 42 20 60 5 26 2 34 -19 48 -13 9 -23 23 -22 32 4 20 -147 82 -274 114 -103 25 -123 46 -105 106 12 40 4 52 -21 29 -18 -16 -23 -12 -96 76 -46 57 -76 102 -76 116 0 14 -4 21 -11 17 -14 -9 -59 34 -59 57 0 10 -6 18 -13 18 -19 0 -127 113 -127 133 0 11 -5 15 -11 11 -6 -3 -41 23 -78 60 l-67 67 9 54 c6 30 7 58 4 62 -4 4 -22 -8 -40 -25 l-33 -32 -63 56 c-61 56 -63 59 -59 101 2 23 1 43 -3 43 -3 0 -16 -11 -29 -25 -13 -14 -28 -25 -32 -25 -5 0 -50 41 -99 91 -85 87 -109 127 -109 182 0 24 -17 22 -25 -3 -6 -20 -8 -19 -42 11 -20 17 -87 55 -149 84 -94 45 -114 58 -120 80 -6 23 -8 25 -21 12 -13 -13 -25 -10 -101 24 -48 21 -92 39 -99 39 -13 0 -171 117 -219 162 -18 17 -35 43 -38 60 -5 25 -9 28 -20 19 -17 -15 -40 -5 -74 32 l-23 25 48 4 c28 3 56 0 68 -7 11 -7 37 -17 57 -24 41 -14 78 -2 78 25 0 8 -4 13 -9 10 -12 -8 -47 21 -38 31 17 17 386 16 537 -2 332 -38 837 -150 1263 -280 l87 -26 71 -105 c40 -57 75 -102 78 -99 3 3 -18 49 -45 102 l-50 97 78 201 c102 258 144 345 278 580 l111 194 174 169 174 169 207 109 c114 60 219 114 234 121 15 6 150 46 302 87 l275 76 209 10 c115 5 255 10 311 10 l102 0 50 -76 c28 -42 54 -87 57 -100 3 -13 10 -21 15 -18 27 16 -11 127 -68 197 -31 37 -75 125 -158 312 l-115 260 -33 183 -34 182 23 172 c42 308 149 602 304 833 65 95 219 299 230 303 6 2 47 -19 92 -46 46 -27 93 -55 106 -61 l23 -12 -17 26 c-10 15 -52 50 -93 77 -112 75 -424 391 -545 553 -77 102 -116 169 -187 312 l-90 183 -16 157 c-15 147 -15 168 1 303 19 158 13 145 132 331 l42 65 78 -8 c44 -4 91 -10 107 -12 15 -3 27 -2 27 3 0 20 -34 33 -146 57 -109 24 -143 27 -394 30 -205 2 -292 0 -340 -10z m-5880 -2807 c14 -25 15 -25 -37 -33 -39 -6 -41 -5 -35 17 10 41 54 51 72 16z m-696 -44 c21 -32 22 -52 1 -35 -12 10 -16 9 -21 -4 -7 -19 -42 -12 -60 12 -9 13 -12 13 -17 -2 -4 -9 -12 -16 -19 -16 -21 1 60 70 81 70 10 0 26 -11 35 -25z m573 -3227 c-3 -7 -5 -2 -5 12 0 14 2 19 5 13 2 -7 2 -19 0 -25z m2710 -1339 c-9 -6 -50 -12 -90 -15 -69 -5 -71 -4 -42 10 35 17 161 22 132 5z" />
+                        </g>
+                    </svg>
+
+                </div>
+
+                <!-- Copyright Section -->
+                <div
+                    class="copyright-section w-full mt-12 flex flex-col gap-4 justify-center items-center border-t border-black pt-8">
+                    <span class="copyright-text text-sm uppercase text-black overflow-hidden">© NWPROD 2026</span>
+                    <div class="copyright-links flex gap-6 justify-center items-center">
+                        <a href="#"
+                            class="copyright-link text-xs uppercase text-black hover:opacity-70 transition-opacity overflow-hidden">
+                            <span class="copyright-link-text">Mentions légales</span>
+                        </a>
+                        <a href="#"
+                            class="copyright-link text-xs uppercase text-black hover:opacity-70 transition-opacity overflow-hidden">
+                            <span class="copyright-link-text">Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+
+
+
+        <div class="absolute w-full h-full  bg-red-600 z-0 ">
+            <div class="w-full curtain-1  bg-red-600  z-30 relative h-auto">
+                <div class="w-full curtain-2 bg-black  relative h-auto">
+                    <div class="h-full w-full home-page bg-red-600  relative">
+                        <section
+                            class="hero w-full  absolute top-0  z-0 flex justify-center min-h-screen overflow-hidden items-center  h-[100dvh]">
+
+
+                            <div class="h-[100vh] w-full z-50 overlay-pin-trigger  bg-black/50 ">
+
+                            </div>
+
+                            <div class="absolute z-10 bg-red-600   h-full w-full flex justify-center  items-end">
+
+                                <div class="h-full w-full absolute bg-red-800 origin-center hero-bg ">
+
+
+                                    <video
+                                        src="https://res.cloudinary.com/dx1axx1s2/video/upload/p_auto/v1784607499/1_ivwuav.mp4"
+                                        class="w-full object-cover  h-full" loop muted autoplay playsinline></video>
+                                </div>
+
+                                <p
+                                    class="hero-title text-[12vw] origin-bottom bottom-[10vh] md:bottom-[15vh]  text-black font-extrabold  z-20  relative leading-[0.8]">
+                                    NWPROD</p>
+
+
+
+
+                            </div>
+
+                            <div
+                                class="flex absolute bottom-20 md:bottom-32 z-20  hero_percentage-container w-full  justify-center items-center">
+                                <span class=" hero relative text-xl hero_percentage-container-text"> 0% </span>
+
+                            </div>
+                        </section>
+
+                        <div class=" relative  overlay-container  z-50 w-full">
+
+                            <div class="h-[100vh] w-full   ">
+
+                            </div>
+
+                            <div class=" flex flex-col  bg-red-600 z-20 min-h-screen  relative h-auto ">
+
+
+
+                                <a href="/"
+                                    class="overlay flex h-[100vh] overflow-hidden  relative inset-0  w-full flex-col   items-center justify-start bg-red-600 text-red-600">
+
+                                    <div class="absolute z-0  w-full h-full">
+
+                                        <div class="w-full py-8 h-1/6 text-black  flex justify-center items-center">
+                                            <span class="uppercase text-xl overlay-subtitle  overflow-hidden">Projet
+                                                NWPROD</span>
+                                        </div>
+
+                                        <div class="w-full p-8 h-1/4 text-black  flex justify-start items-center">
+                                            <h2 class="uppercase text-2xl">01</h2>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="h-[100vh] w-full z-50 absolute overlay-under-trigger  bg-black/70 ">
+
+                                    </div>
+
+                                    <div class=" absolute flex h-full w-full items-end justify-center">
+                                        <div class="h-[100%] overlay-image overflow-hidden  w-full object-cover">
+                                            <img src="https://cdn.cosmos.so/20420886-807a-450d-834f-2e73a2af15f1?format=webp"
+                                                class="object-cover h-full w-full" alt="Projet NWPROD" />
+                                            <div
+                                                class="absolute top-0 left-0 z-20 flex w-full h-full text-red-600 flex-col items-center justify-start py-[30%] md:py-[10%]">
+                                                <h2 class="text-[6vw] overlay-title overflow-hidden">PRISM</h2>
+                                                <p
+                                                    class="mt-6 overlay-description  overflow-hidden uppercase text-xl text-balance md:text-2xl text-center ">
+                                                    Court-métrage réalisation et production NWPROD</p>
+                                            </div>
+
+
+                                            <div
+                                                class="absolute top-0 left-0 z-30 overlay-bg-under bg-black/40  flex w-full h-full text-red-600 flex-col items-center justify-start ">
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+
+
+                                    </div>
+
+
+
+
+                                </a>
+
+
+                                <a href="/"
+                                    class="overlay flex h-[100vh] overflow-hidden  relative inset-0  w-full flex-col   items-center justify-start bg-black text-red-600">
+
+                                    <div class="absolute z-0  w-full h-full">
+
+                                        <div class="w-full py-8 h-1/6 text-red-600  flex justify-center items-center">
+                                            <span class="uppercase text-xl overlay-subtitle  overflow-hidden">Projet
+                                                NWPROD</span>
+                                        </div>
+
+                                        <div class="w-full p-8 h-1/4 text-black  flex justify-start items-center">
+                                            <h2 class="uppercase text-2xl">02</h2>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="h-[100vh] w-full z-50 absolute overlay-under-trigger  bg-black/70 ">
+
+                                    </div>
+
+                                    <div class=" absolute flex h-full w-full items-end justify-center">
+                                        <div class="h-[100%] overlay-image overflow-hidden w-full object-cover">
+                                            <img src="https://cdn.cosmos.so/ab9d288e-a60a-431b-bfbf-bcde55a348b9?format=webp"
+                                                class="object-cover h-full w-full" alt="Projet NWPROD" />
+
+                                            <div
+                                                class="absolute top-0 left-0 z-20 flex w-full h-full flex-col items-center justify-start py-[30%] md:py-[10%]">
+                                                <h2 class="text-[6vw] overlay-title overflow-hidden">ECHOES</h2>
+                                                <p
+                                                    class="mt-6 overlay-description   overflow-hidden uppercase text-xl text-balance md:text-2xl text-center ">
+                                                    Court-métrage réalisation et production NWPROD</p>
+                                            </div>
+
+
+                                            <div
+                                                class="absolute top-0 left-0 z-30 overlay-bg-under bg-black/40  flex w-full h-full text-red-600 flex-col items-center justify-start ">
+
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+
+
+
+                                </a>
+
+
+
+                                <a href="/"
+                                    class="overlay flex h-[100vh] overflow-hidden  relative inset-0  w-full flex-col   items-center justify-start bg-red-600 text-red-600">
+
+                                    <div class="absolute z-0  w-full h-full">
+
+                                        <div class="w-full py-8 h-1/6 text-black  flex justify-center items-center">
+                                            <span class="uppercase text-xl overlay-subtitle  overflow-hidden">Projet
+                                                NWPROD</span>
+                                        </div>
+
+                                        <div class="w-full p-8 h-1/4 text-black  flex justify-start items-center">
+                                            <h2 class="uppercase text-2xl">03</h2>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="h-[100vh] w-full z-50 absolute overlay-under-trigger  bg-black/70 ">
+
+                                    </div>
+
+
+                                    <div class=" absolute flex h-full w-full items-end justify-center">
+                                        <div class="h-[100%] overlay-image overflow-hidden w-full object-cover">
+                                            <img src="https://cdn.cosmos.so/ca7cc9af-0352-4634-a890-e27ed0bca74f?format=webp"
+                                                class="object-cover h-full w-full" alt="Projet NWPROD" />
+
+                                            <div
+                                                class="absolute top-0 left-0 z-20 flex w-full h-full flex-col items-center justify-start py-[30%] md:py-[10%]">
+                                                <h2 class="text-[6vw] overlay-title overflow-hidden">NEXUS</h2>
+                                                <p
+                                                    class="mt-6 overlay-description  overflow-hidden uppercase text-xl text-balance md:text-2xl text-center ">
+                                                    Court-métrage réalisation et production NWPROD</p>
+                                            </div>
+
+
+                                            <div
+                                                class="absolute top-0 left-0 z-30 overlay-bg-under bg-black/40  flex w-full h-full text-red-600 flex-col items-center justify-start ">
+
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+
+
+
+                                </a>
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="relative   min-h-screen w-full">
+                <footer class="flex flex-col fixed bottom-0 bg-red-600  gap-8 h-[70vh] min-h-[70vh] md:min-h-[75vh] md:h-[75vh] 
+             px-8 py-2 justify-center items-center w-full">
+                    <div class=" flex justify-center gap-8 md:gap-0 md:flex-row flex-col items-center w-full">
+                        <div class="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center">
+                            <h3 class="text-5xl text-bold">Contacts</h3>
+                            <a href="#" aria-label="Contacts"
+                                class="nav-link inline-block overflow-hidden text-lg md:text-xl h-full uppercase ">
+                                <span
+                                    class="nav-link__track flex flex-col h-[1.2em] overflow-hidden transition-transform duration-300">
+                                    <span class="nav-link__text font-medium h-[1.8em] leading-[1.2em]">
+                                        CONTACT@NWPROD.COM
+                                    </span>
+                                    <span class="nav-link__text font-medium h-[1.8em] leading-[1.2em]"
+                                        aria-hidden="true">
+                                        CONTACT@NWPROD.COM
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="w-full md:w-1/2 flex flex-col gap-4 justify-center items-center">
+                            <h3 class="text-5xl text-bold">Follow</h3>
+                            <a href="#" aria-label="Contacts"
+                                class="nav-link inline-block overflow-hidden text-lg md:text-xl h-full uppercase ">
+                                <span
+                                    class="nav-link__track flex flex-col h-[1.2em] overflow-hidden transition-transform duration-300">
+                                    <span class="nav-link__text font-medium h-[1.8em] leading-[1.2em]">
+                                        @NWPROD_OFFICIEL
+                                    </span>
+                                    <span class="nav-link__text font-medium h-[1.8em] leading-[1.2em]"
+                                        aria-hidden="true">
+                                        @NWPROD_OFFICIEL
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex justify-start items-start  overflow-hidden">
+                        <p
+                            class="text-[24vw]  text-black  text-left font-extrabold footer-title  z-50  relative leading-[0.8]">
+                            NWPROD</p>
+
+                    </div>
+
+                    <div class="flex justify-between   w-full">
+
+                        <span class="uppercase text-xl md:text-3xl">© 2026 NWPROD - Tous droits réservés</span>
+                        <span class="uppercase text-xl md:text-3xl">Crédits</span>
+
+                    </div>
+
+                    <div>
+
+                    </div>
+
+                </footer>
+            </div>
+
+
+        </div>
+
+
+        </div>
+
+
+
+    </main>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Flip.min.js"></script>
+<script src="./main.js"></script>
+
+
+</html>
