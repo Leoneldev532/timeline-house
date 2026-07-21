@@ -46,6 +46,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const copyrightText = document.querySelector(".copyright-text");
   const copyrightLinks = document.querySelectorAll(".copyright-link-text");
 
+  let mm;
   let ctx = gsap.context(() => {
     /* ============================================================
            3. INITIAL STATES (gsap.set)
