@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'NBInternationalRegular';
+    src: url("./assets/OverusedGrotesk-VF.woff2");
+}
+
+
+
+* {
+    font-family: 'NBInternationalRegular',sans-serif !important;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.mask-image-fade-left {
+      mask-image: linear-gradient(270deg, transparent 0, #000 50%, #000 0, transparent);
+    -webkit-mask-image: linear-gradient(270deg, transparent 0, #000 50%, #000 0, transparent);
+}
+
+.mask-image-fade-right {
+   mask-image: linear-gradient(90deg, transparent 0, #000 50%, #000 0, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 50%, #000 0, transparent);
+}
+.hero__overlay-panel--top {
+       margin-bottom: -1px;
+}
