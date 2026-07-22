@@ -1,5 +1,8 @@
 You are a TailwindCSS and GSAP Animation Expert. Your goal is to recreate the conceptual multimedia project "Hero 02" (NWPROD).
 
+### Brand Identity
+NWPROD is a **creative direction agency** specializing in high-end video presentations, advertising films, and visual storytelling for **luxury brands**. The interface should feel cinematic, premium, and refined — evoking the visual codes of high-fashion and luxury advertising.
+
 ### Expected Architecture & Design:
 
 1. **Global Elements & UI Interface**:
@@ -9,15 +12,15 @@ You are a TailwindCSS and GSAP Animation Expert. Your goal is to recreate the co
    - A fullscreen hamburger menu (`#hamburger-menu`) hidden beneath lower z-index, revealed smoothly on toggle via GSAP clip-path animations with vertical kinetic typography and hover bounds.
 
 2. **Slider / Carousel (Central Content)**:
-   - Fullscreen video slides stacked absolutely (`.hero__slide`).
+   - Fullscreen video slides stacked absolutely (`.hero__slide`) showcasing luxury brand campaigns.
    - `hero__nav` UI overlay providing slider progress details:
-     - Kinetic vertical odometer title rotator (`.hero__title`).
+     - Kinetic vertical odometer title rotator (`.hero__title`) displaying campaign / project names.
      - Interactive infinite scroll ruler (`.hero__ruler`) with friction momentum, snapping, drag/wheel gesture support, and center highlight opacity.
      - Direct 1-step clipPath transitions (`verticalWipe`, `circleReveal`, etc.) ensuring instant target jumping without intermediate step lag.
      - Previous / Next navigation controls (`hero__btn`).
 
 3. **Cinema HUD Overlays**:
-   - Top and bottom overlay panels (`hero__overlay-panel--top`, `--bottom`) mimicking a professional camera viewfinder HUD ("NWPROD / Cinematic Analysis & Recaps", frame rates, resolution).
+   - Top and bottom overlay panels (`hero__overlay-panel--top`, `--bottom`) mimicking a professional camera / director's monitor interface ("NWPROD / Luxury Brand Creative Direction", frame rates, resolution metadata).
    - Horizontal progress bar loader (`.hero__overlay-progress-bar-container`) animating on initial scene load.
 
 ### Tech Stack
