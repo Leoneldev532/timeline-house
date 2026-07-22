@@ -1,6 +1,6 @@
 /**
- * Presets de transitions clipPath, indépendants du carousel.
- * Chaque entrée : { open, collapsed }. Passé tel quel à createSlideCarousel({ transition }).
+ * ClipPath transition presets, independent of the carousel.
+ * Each entry: { open, collapsed }. Pass directly to createSlideCarousel({ transition }).
  */
 const CLIP_PATH_TRANSITIONS = {
     verticalWipe: {

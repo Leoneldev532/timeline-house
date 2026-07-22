@@ -1,16 +1,19 @@
 /**
  * createSlideCarousel
- * Cœur minimal : empilement clipPath + zIndex + navigation. Rien d'autre.
- * Les transitions clipPath et les animations de texte sont fournies de l'extérieur.
+ * Minimal core: clipPath + zIndex slide stacking with navigation. Nothing else.
+ * ClipPath transitions and text animations are provided externally.
  *
  * @param {Object} options
- * @param {string|HTMLElement} options.root - conteneur (doit contenir des .hero__slide)
- * @param {{ open: string, collapsed: string }} options.transition - état visible / caché du clipPath
+ * @param {string|HTMLElement} options.root - Container element (must include .hero__slide children)
+ * @param {{ open: string, collapsed: string }} options.transition - Visible / collapsed clipPath states
  * @param {number} [options.autoplayDelay=2500]
  * @param {number} [options.duration=0.8]
  * @param {number} [options.delay=0]
  * @param {boolean} [options.autoplay=true]
- * @param {(dir: number, nextIndex: number, prevIndex: number) => void} [options.onChange] - appelé à chaque navigation, avant l'animation du slide
+ * @param {Array<HTMLElement>} [options.slidesElementList]
+ * @param {HTMLElement} [options.prevBtnElement]
+ * @param {HTMLElement} [options.nextBtnElement]
+ * @param {(dir: number, nextIndex: number, prevIndex: number) => void} [options.onChange] - Called on each navigation, before the slide animation
  * @returns {{ next: Function, prev: Function, goToIndex: Function, start: Function, stop: Function, destroy: Function, getCurrentIndex: Function, setTransition: Function, setDelay: Function }}
  */
 function createSlideCarousel({

@@ -1,22 +1,22 @@
 /**
  * createScrollRuler
- * Règle graduée infinie (majeures numérotées + mineures), pilotée au wheel/drag
- * avec inertie basée sur la vélocité du geste.
+ * Infinite scroll ruler (numbered major ticks + minor ticks), driven by wheel/drag
+ * gestures with momentum inertia based on speed.
  *
- * Comportement visuel :
- *  - graduations proches du centre passent à opacity-90, les autres restent atténuées
+ * Visual behavior:
+ *  - Ticks near the active center fade up to opacity 0.9, others remain muted.
  *
  * @param {Object} options
- * @param {string|HTMLElement} options.root
- * @param {number} options.count
- * @param {number} [options.tickGap=14]
- * @param {number} [options.minorPerMajor=5]
- * @param {number} [options.friction=0.94]
- * @param {number} [options.zoneRadius=60] - rayon (px) autour du centre où les graduations montent à opacity-90
- * @param {boolean} [options.autoplay=true] - défilement automatique continu quand inactif
- * @param {number} [options.autoplaySpeed=0.4] - vitesse du défilement auto, en px/frame (~60fps)
- * @param {number} [options.autoplayResumeDelay=1500] - délai (ms) après la dernière interaction avant reprise de l'autoplay
- * @param {(index: number) => void} [options.onChange]
+ * @param {string|HTMLElement} options.root - Container element or CSS selector
+ * @param {number} options.count - Total logical count of items
+ * @param {number} [options.tickGap=14] - Pixel gap between ticks
+ * @param {number} [options.minorPerMajor=5] - Number of minor ticks per major section
+ * @param {number} [options.friction=0.94] - Inertia friction factor (0 to 1)
+ * @param {number} [options.zoneRadius=60] - Radius (px) from center where ticks boost opacity
+ * @param {boolean} [options.autoplay=true] - Continuous auto scroll when idle
+ * @param {number} [options.autoplaySpeed=0.4] - Speed of auto scroll in px/frame (~60fps)
+ * @param {number} [options.autoplayResumeDelay=1500] - Delay (ms) before resuming autoplay after interaction
+ * @param {(index: number) => void} [options.onChange] - Fired on index changes
  * @returns {{ goToIndex: Function, getCurrentIndex: Function, destroy: Function }}
  */
 function createScrollRuler({
@@ -57,7 +57,7 @@ function createScrollRuler({
     function opacityForDistance(x, baseOpacity) {
         const dist = Math.abs(x);
         if (dist >= zoneRadius) return baseOpacity;
-        const t = 1 - dist / zoneRadius; // 0 au bord de la zone, 1 au centre
+        const t = 1 - dist / zoneRadius; // 0 at zone edge, 1 at center
         return baseOpacity + (0.9 - baseOpacity) * t;
     }
 

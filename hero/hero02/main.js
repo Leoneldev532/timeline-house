@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
     gsap.ticker.add((time) => lenis.raf(time * 1000));
     gsap.ticker.lagSmoothing(0);
 
-    // --- Carousel Elements ---
+    // --- Carousel Setup ---
     const carouselTitles = ["PRIME", "PULSE", "FLUX", "APEX"];
     const carouselSteps = carouselTitles.map((_, i) => String(i + 1));
 
@@ -56,7 +56,7 @@ window.addEventListener("DOMContentLoaded", () => {
         onChange: (index) => heroCarousel.goToIndex(index)
     });
 
-    // --- Hamburger Menu Elements ---
+    // --- Hamburger Menu ---
     const menuLinks = gsap.utils.toArray(".hamburger__menu-link");
     const menuContainer = document.querySelector(".hamburger__menu");
     const menuToggleBtn = document.querySelector(".hamburger__menu-toggle");
@@ -87,7 +87,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // --- Overlay Animations ---
+    // --- Overlay Intro Animations ---
     const progressValueElement = document.querySelector(".hero__overlay-progress-value");
     const overlayTimeline = gsap.timeline();
 
@@ -126,10 +126,10 @@ window.addEventListener("DOMContentLoaded", () => {
         yTo(e.clientY - 50);
     });
 
-    // Navigation directe (ex: pagination) :
+    // Direct navigation (e.g. pagination):
     // heroCarousel.goToIndex(2);
 
-    // Changer de transition à chaud :
+    // Swap transition preset at runtime:
     // heroCarousel.setTransition(CLIP_PATH_TRANSITIONS.circleReveal);
 
 });

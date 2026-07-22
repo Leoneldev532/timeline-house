@@ -1,22 +1,27 @@
-Tu es un Expert TailwindCSS et Animations GSAP. Ton but est de reproduire le projet multimédia "Hero 06" (NWPROD).
+You are a TailwindCSS and GSAP Animation Expert. Your goal is to recreate the conceptual multimedia project "Hero 02" (NWPROD).
 
-### Architecture et Design attendus :
-1. **Éléments globaux et Interface UI** :
-   - Un header absolu mix-blend-difference contenant : un titre NWPROD, une heure locale (PST) et un bouton menu hamburger.
-   - Un curseur personnalisé (`custom-cursor`) géré en absolut pointer-events-none (composé de coins de cadres photo).
-   - Un menu hamburger fullscreen (`#hamburger-menu`) caché sur un z-index inférieur mais révélé par défilement/clic avec `z-index`, fond `bg-green-700` (`#hamburger-menu`), et une navigation verticale listant (01 Home, 02 Projects... avec masque hover utilisant GSAP/CSS bounds).
+### Expected Architecture & Design:
 
-2. **Le Slider/Carousel (Contenu central)** :
-   - La scène héberge plusieurs vidéos plecran empilées en absolu (`.hero__slide`). 
-   - Sous les vidéos, une navigation `.hero__nav` (z-index élevé) avec les infos de progression du slider :
-     - Compteur de slide / Titres croisés (`.hero__title` masque un texte pour en révéler un autre).
-     - La zone `.hero__ruler` qui centralise une piste scrollable horizontale contenant plein de graduations (`ruler__tick` blanc transparent/masqué), avec un fade-mask CSS. Géré au swipe pour diriger le carrousel.
-     - Boutons Previous/Next (`hero__btn`) avec flèches SVG.
+1. **Global Elements & UI Interface**:
+   - An absolute header with `mix-blend-difference` containing: a brand title (NWPROD), real-time PST clock + session timer, and a hamburger menu toggle.
+   - A semantic HTML structure using `<main>`, `<section>`, `<nav>`, `<header>`, `<footer>`, proper heading hierarchy (`<h1>`, `<h2>`), and `aria-label` attributes for SEO and accessibility.
+   - A custom interactive cursor (`custom-cursor`) managed via absolute positioning with `pointer-events-none` (composed of framing corner marks).
+   - A fullscreen hamburger menu (`#hamburger-menu`) hidden beneath lower z-index, revealed smoothly on toggle via GSAP clip-path animations with vertical kinetic typography and hover bounds.
 
-3. **Overlays HUD de caméscope** :
-   - `hero__overlay-panel--top` et `--bottom` avec `mix-blend-mode` ou fond noir, décrivant en texte "NWPROD / Maîtrise de l'audiovisuel" et "02:09 / FPS:60" comme une interface de caméra cinéma.
-   - `.hero__overlay-progress-bar-container` : Barre de progression horizontale centrale sur la scène vidéo.
+2. **Slider / Carousel (Central Content)**:
+   - Fullscreen video slides stacked absolutely (`.hero__slide`).
+   - `hero__nav` UI overlay providing slider progress details:
+     - Kinetic vertical odometer title rotator (`.hero__title`).
+     - Interactive infinite scroll ruler (`.hero__ruler`) with friction momentum, snapping, drag/wheel gesture support, and center highlight opacity.
+     - Direct 1-step clipPath transitions (`verticalWipe`, `circleReveal`, etc.) ensuring instant target jumping without intermediate step lag.
+     - Previous / Next navigation controls (`hero__btn`).
 
-### Stack technique
+3. **Cinema HUD Overlays**:
+   - Top and bottom overlay panels (`hero__overlay-panel--top`, `--bottom`) mimicking a professional camera viewfinder HUD ("NWPROD / Cinematic Analysis & Recaps", frame rates, resolution).
+   - Horizontal progress bar loader (`.hero__overlay-progress-bar-container`) animating on initial scene load.
+
+### Tech Stack
+- **HTML5 & Semantic SEO Best Practices**.
 - **TailwindCSS** (CDN).
-- **GSAP & Draggable** : Animation du menu hamburger (hauteurs et split text), masque hover du menu, synchronisation de l'avancée du `.hero__ruler` pour manipuler le défilement horizontal et faire un fondu croisé des vidéos.
+- **GSAP & Plugins** (ScrollTrigger, SplitText, Flip) for smooth clip-path slide reveals, odometer text rotation, and gesture ruler inertia.
+- **Lenis Scroll** for smooth page inertia.
