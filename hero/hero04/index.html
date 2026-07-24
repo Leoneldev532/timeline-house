@@ -1,0 +1,198 @@
+﻿<!--
+  ============================================================
+  Hero 04 - Leonel Yimga Portfolio
+  (c) 2026 Leonel Yimga. Tous droits reserves.
+  https://leonel-yimga.dev
+  ============================================================
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO primaire -->
+    <title>Leonel Yimga - Freelance Front-end - Yaounde</title>
+    <meta name="description"
+        content="Portfolio de Leonel Yimga, developpeur Freelance Front-end base a Yaounde, Cameroun. Specialiste GSAP, TailwindCSS et interfaces animees.">
+    <meta name="author" content="Leonel Yimga">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://leonel-yimga.dev/hero/hero04/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://leonel-yimga.dev/hero/hero04/">
+    <meta property="og:title" content="Leonel Yimga - Freelance Front-end">
+    <meta property="og:description"
+        content="Portfolio de Leonel Yimga, developpeur Freelance Front-end base a Yaounde, Cameroun.">
+    <meta property="og:locale" content="fr_CM">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Leonel Yimga - Freelance Front-end">
+    <meta name="twitter:description"
+        content="Portfolio de Leonel Yimga, developpeur Freelance Front-end base a Yaounde, Cameroun.">
+
+    <!-- Polices : preconnect en premier, puis la feuille de style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- TailwindCSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        /* Polices custom ---------------------------------------- */
+        @font-face {
+            font-family: 'me';
+            src: url('./font/me2.woff2') format('woff2');
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'mo';
+            src: url('./font/mo7.woff2') format('woff2');
+            font-display: swap;
+        }
+
+        /* Typographie ------------------------------------------- */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'me', sans-serif;
+        }
+
+        span,
+        p {
+            font-family: 'mo', sans-serif;
+        }
+
+        /* Utilitaires ------------------------------------------- */
+        .transparent {
+            transition: background 0.3s ease-in-out;
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="main h-full w-full relative overflow-hidden">
+        <section class="hero h-[100vh] w-full relative overflow-hidden"
+            aria-label="Hero - chargement et presentation">
+
+            <!-- Overlay de chargement -->
+            <div class="hero__overlay absolute overflow-hidden flex flex-col justify-between items-center p-6 top-0 left-0 w-full h-full bg-neutral-900 z-10"
+                aria-hidden="true">
+
+                <!-- Barre de progression -->
+                <div class="hero__progress-container relative w-full overflow-hidden h-0.5 bg-neutral-700"
+                    role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="hero__progress-fill w-full h-full">
+                        <div class="hero__fill-line w-9/12 h-full bg-gray-200 translate-x-[-100%]"></div>
+                    </div>
+                </div>
+
+                <!-- Portrait centre -->
+                <div class="hero__overlay-image-container">
+                    <div class="hero__overlay-image-wrapper w-[240px] h-[280px] flex items-center justify-center">
+                        <img class="hero__overlay-image w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1782252152335-ee9b9a69bde3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Portrait de Leonel Yimga">
+                    </div>
+                </div>
+
+                <!-- Textes animes (Leonel . pourcentage . Yimga) -->
+                <div class="hero__overlay-info w-full flex justify-between items-center">
+
+                    <div class="hero__overlay-info-item overflow-hidden text-white text-lg">
+                        <span class="hero__animated-text inline-block">Leonel</span>
+                    </div>
+
+                    <div class="hero__overlay-info-item overflow-hidden text-white text-lg">
+                        <span class="hero__percentage hero__animated-text inline-block">00</span>
+                    </div>
+
+                    <div class="hero__overlay-info-item overflow-hidden text-white text-lg">
+                        <span class="hero__animated-text inline-block">Yimga</span>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /Overlay -->
+
+            <!-- Contenu principal (sous l'overlay) -->
+            <div class="hero__container bg-gray-200 h-[100vh] w-full relative overflow-hidden flex flex-col justify-between items-center">
+
+                <!-- En-tete -->
+                <header class="hero__header grid gap-2 lg:p-4 lg:flex w-full justify-between items-center p-6">
+
+                    <div class="hero__header-identity flex md:text-md text-sm flex-col gap-0 font-bold">
+                        <span class="text-gray-600 inline-block">Leonel Yimga :</span>
+                        <span class="text-black inline-block">Freelance Front-end</span>
+                    </div>
+
+                    <div class="hero__header-location flex md:text-md text-sm flex-col gap-0 font-bold">
+                        <span class="text-gray-600 inline-block">Localisation :</span>
+                        <span class="text-black inline-block">Yaounde, Cameroun</span>
+                    </div>
+
+                    <nav class="hero__header-nav flex md:text-md text-sm flex-col gap-0 font-bold"
+                        aria-label="Navigation principale">
+                        <span class="text-gray-600 inline-block">Navigation</span>
+                        <ul class="flex gap-1 text-black list-none p-0 m-0">
+                            <li><a href="/" class="hover:underline">Index</a>,</li>
+                            <li><a href="/work" class="hover:underline">Work</a>,</li>
+                            <li><a href="/archive" class="hover:underline">Archive</a>,</li>
+                            <li><a href="/contact" class="hover:underline">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="hero__header-theme flex md:text-md text-sm flex-col gap-0 font-bold">
+                        <span class="text-gray-600 inline-block">Theme</span>
+                        <span class="text-black inline-block">Light Mode, Dark Mode</span>
+                    </div>
+
+                </header>
+
+                <!-- Portrait principal -->
+                <div class="hero__content w-full flex justify-center items-center">
+                    <div class="hero__content-image-container flex justify-center items-center h-full w-full relative overflow-hidden">
+                        <div class="hero__image-wrapper w-[240px] h-[280px] overflow-hidden">
+                            <img class="hero__image w-full h-full object-cover"
+                                src="https://images.unsplash.com/photo-1782252152335-ee9b9a69bde3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Portrait de presentation de Leonel Yimga, Freelance Front-end">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grand titre -->
+                <div class="hero__big-name w-full flex p-6 justify-center items-center">
+                    <h1 class="text-[14.60vw] will-change-transform leading-[0.8] md:leading-[0.5] text-black">
+                        Leonel NexStep
+                    </h1>
+                </div>
+
+            </div>
+            <!-- /Contenu principal -->
+
+        </section>
+    </main>
+
+    <!-- Copyright (visuellement masque, lisible par les assistants et robots) -->
+    <footer class="sr-only" aria-label="Informations legales">
+        <p>(c) 2026 Leonel Yimga. Tous droits reserves.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

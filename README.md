@@ -10,14 +10,15 @@ Explore a curated collection of open-source landing pages, section blocks, and s
 - **GSAP** (GreenSock Animation Platform) for high-performance timeline animations
 - **Lenis** for smooth scroll experiences
 
-
-
-## creative hero sections 
+## creative hero sections
 
 - hero01 : https://timeline-house-hero-hero01.vercel.app/
+- hero02 : https://timeline-house-hero-hero02.vercel.app/
+- hero03 : https://timeline-house-hero-hero03.vercel.app/
 
+## creative landing page
 
-
+- landing01 : https://timeline-house-mu.vercel.app/
 
 ////////////////////////////////////
 Code By Léonel Yimga also called Leoy
