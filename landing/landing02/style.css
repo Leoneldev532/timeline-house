@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url("./assets/fonts/HelveticaNeueCyr-Medium.woff2");
+}
+
+@font-face {
+    font-family: 'MonumentExBold';
+    src: url("./assets/fonts/MonumentExtended-Bold.woff2");
+}
+
+
+* {
+    font-family: 'HelveticaNeueCyr',sans-serif !important;
+    letter-spacing: -1px;
+}
+
+
+.font-monumentExtended {
+    font-family: 'MonumentExBold',sans-serif !important;
+}
+
+.font-monumentExtended * {
+    font-family: 'MonumentExBold',sans-serif !important;
+}
+
+.animated-y-on-scroll{
+    display: inline-block;
+    overflow: hidden;
+    will-change: transform;
+
+}
+
+.line-mask{
+    line-height: 1 !important;
+    overflow: hidden;
+     will-change: transform;
+}
+
+.hero__animated-text span{
+ will-change: transform;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only.focus\:not-sr-only:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.75rem 1.25rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  background: #fff;
+  color: #000;
+  z-index: 100;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html,
+body {
+  background-color: #ffffff;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+#site-header,
+#site-header a,
+#site-header button,
+#site-header span {
+  color: #ffffff;
+  mix-blend-mode: difference;
+}

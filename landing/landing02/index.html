@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glow - Strategic Design & Digital Production House</title>
+    <meta
+      name="description"
+      content="Glow is a 360 production house shaping tomorrow's creative landscape with unmatched craft and precision. Discover our work in design and digital production."
+    />
+    <meta name="robots" content="index, follow" />
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.scrollTo(0, 0);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.25/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="relative">
+    <a href="#main-content" class="sr-only focus:not-sr-only"
+      >Skip to main content</a
+    >
+
+    <header
+      class="px-6 py-4 z-50 justify-between fixed flex w-full"
+      id="site-header"
+    >
+      <ul class="flex justify-between bg-transparent items-center w-1/4 gap-2">
+        <li>
+          <a
+            href="/"
+            aria-label="Glow - back to home"
+            class="text-4xl headee__firstTextAnimated font-monumentExtended font-extrabold lg:block hidden"
+            >Glow</a
+          >
+        </li>
+        <li>
+          <span class="text-xl headee__firstTextAnimated lg:block hidden"
+            >(Design/production)</span
+          >
+        </li>
+      </ul>
+
+      <nav
+        aria-label="Main navigation"
+        class="flex justify-between lg:w-[40%] items-center"
+      >
+        <ul class="justify-between lg:flex hidden gap-2">
+          <li class="overflow-hidden">
+            <a href="#work" class="text-xl">Work</a>
+          </li>
+          <li class="overflow-hidden">
+            <a href="#services" class="text-xl">Services</a>
+          </li>
+          <li class="overflow-hidden">
+            <a href="#about" class="text-xl">About</a>
+          </li>
+        </ul>
+        <a
+          href="#contact"
+          class="text-xl lg:block hidden font-medium underline underline-offset-8"
+          >Start a project</a
+        >
+        <button
+          type="button"
+          class="text-xl lg:hidden block font-medium underline underline-offset-8"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          Menu
+        </button>
+      </nav>
+    </header>
+
+    <main id="main-content" class="min-h-screen w-full relative">
+      <div
+        class="hero w-full min-h-screen lg:h-screen relative flex justify-start landing-abs-section items-center"
+        data-header-theme="light"
+      >
+        <div
+          class="hero__animated-section z-0 lg:block hidden overflow-hidden relative w-full h-full"
+        >
+          <div class="w-1/2 z-0 overflow-hidden relative h-[100vh]">
+            <video
+              src="https://res.cloudinary.com/dx1axx1s2/video/upload/v1784503650/4_frnzoo.mp4"
+              class="w-full h-full absolute z-0 object-cover"
+              autoplay
+              playsinline
+              muted
+              loop
+              aria-hidden="true"
+              role="presentation"
+            ></video>
+          </div>
+        </div>
+
+        <div
+          class="w-full relative lg:absolute flex justify-end overflow-hidden items-center z-10 lg:inset-0 h-auto pointer-events-none"
+        >
+          <div
+            class="hero__animated-section-overlay hidden lg:flex justify-end items-end flex-col lg:absolute z-0 lg:top-0 lg:left-0 w-full h-full"
+          >
+            <div
+              class="h-[30vh] w-[65%] lg:block hidden hero__animated-block bg-white"
+            ></div>
+            <div
+              class="h-[25vh] lg:h-[22vh] will-change-transform overflow-hidden xl:h-[35vh] lg:flex hidden hero__animated-block w-[85%] bg-white justify-start items-end px-2 py-4"
+            >
+              <h2
+                class="text-[16vw] h-full w-[100vw] overflow-hidden leading-[1.1] font-monumentExtended font-extrabold"
+              >
+                <div class="hero__bigTitle">Glow</div>
+              </h2>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:w-[45%] h-full justify-center lg:px-[5%] gap-8 relative h-auto pt-[15%] lg:pt-0 lg:py-[10%] flex z-10 flex-col-reverse lg:flex-col pointer-events-auto"
+          >
+            <div class="w-full z-0 block lg:hidden relative h-[60vh]">
+              <video
+                src="https://res.cloudinary.com/dx1axx1s2/video/upload/v1784503650/4_frnzoo.mp4"
+                class="w-full h-full z-0 object-cover"
+                autoplay
+                playsinline
+                muted
+                loop
+                aria-hidden="true"
+                role="presentation"
+              ></video>
+              <div class="absolute inset-0 z-10 w-full h-full">
+                <div
+                  class="h-[35vh] relative w-full hero__animated-section-mobile bg-white"
+                ></div>
+                <div
+                  class="h-[35vh] relative w-full hero__animated-section-mobile bg-white"
+                ></div>
+                <div
+                  class="h-[35vh] relative w-full hero__animated-section-mobile bg-white"
+                ></div>
+              </div>
+            </div>
+
+            <div
+              class="hero__description-line-1 lg:px-0 px-4 max-w-full lg:max-w-md flex gap-8"
+            >
+              <h3
+                class="text-xl lg:text-2xl title__hero font-medium text-balance"
+              >
+                Strategic design partner
+              </h3>
+
+              <h3
+                class="text-xl lg:text-2xl title__hero font-medium text-balance"
+              >
+                Digital Production House
+              </h3>
+            </div>
+
+            <h1
+              class="text-4xl xl:text-5xl text-balance hero__animated-text py-16 lg:py-0 lg:px-0 px-4 mt-4 lg:font-bold"
+            >
+              Shaping Tomorrow's Creative Landscape with Unmatched Craft and
+              Precision.
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="h-auto flex flex-col justify-start-items-center bg-white relative overflow-hidden py-[5%] landing-abs-section w-full"
+        data-header-theme="dark"
+      >
+        <div class="line flex flex-col relative py-[8%]lg:gap-0 gap-4 px-8">
+          <div class="flex gap-1 lg:gap-2 flex-col">
+            <span
+              class="text-2xl max-w-xs animated-y-on-scroll inline-block text-balance"
+              >Little Black Book Mobile Apps & Branding</span
+            >
+            <p class="text-[4vw] leading-[1] relative"></p>
+
+            <div
+              class="line-image relative h-[250px] animated-image-at-scroll lg:h-[350px] w-[50%] lg:w-[20vw]"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1783990901858-59d849c532d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3MHx8fGVufDB8fHx8fA%3D%3D"
+                class="object-cover h-full w-full"
+                alt="Screenshot of Little Black Book mobile app"
+              />
+            </div>
+          </div>
+
+          <div class="lg:-mt-[8em]">
+            <span
+              class="spacer hidden lg:inline-block min-w-[40vw]"
+              aria-hidden="true"
+            ></span>
+            <p
+              class="text-4xl lg:text-8xl relative inline-block animated-y-on-scroll"
+            >
+              <span class="lg:w-[21vw] inline-block"> </span>Challenging the
+              status quo with audacious creativity and unwavering dedication. We
+              don't settle for ordinary; instead, we embark on a journey of
+              innovation, meticulously crafting each project into a masterpiece.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full lg:flex-row lg:gap-0 px-8 gap-4 py-[8%] flex-col flex justify-between items-start py-[10%] lg:py-[15%]"
+        >
+          <span class="text-xl lg:text-2xl animated-O-on-scroll max-w-52">
+            Glow is a 360 production house
+          </span>
+
+          <div
+            class="flex justify-between animated-O-on-scroll justify-start flex-col"
+          >
+            <p class="max-w-sm text-xl lg:text-2xl flex flex-col gap-y-8">
+              <span class="inline-block">
+                We adopt a holistic 360-degree approach, uniting all our expert
+                services under one roof to forge highly creative communication
+                that consistently delivers real, measurable results.
+              </span>
+              <span class="inline-block">
+                At Glow, we fully commit to giving your unique brand the precise
+                attention it deserves. We boldly embrace new ideas and empower
+                everyone to speak their mind and share new visions.
+              </span>
+
+              <a
+                href="#about"
+                class="text-xl lg:text-2xl underline underline-offset-2"
+                ><span>More about our approach</span></a
+              >
+            </p>
+          </div>
+
+          <span class="inline-block text-2xl" aria-hidden="true">(02)</span>
+        </div>
+
+        <div
+          class="lg:flex-row flex-col lg:pl-8 gap-4 pt-[11vh] lg:h-screen flex"
+          id="work"
+        >
+          <div
+            class="w-full lg:h-[98vh] h-auto lg:w-1/2 lg:pr-8 py-8 lg:py-8 flex flex-col justify-between lg:justify-end items-start"
+          >
+            <!-- MOBILE -->
+            <div class="flex lg:hidden flex-col gap-4 w-full">
+              <!-- ===== SECTION 1 ===== -->
+              <div class="px-8 flex flex-col gap-8">
+                <h4 class="text-4xl font-bold">1</h4>
+
+                <h5 class="text-4xl flex flex-col font-bold">
+                  <span class="inline-block h-8">Pass</span>
+                  <span class="inline-block h-8">The Baton</span>
+                </h5>
+
+                <div class="w-full flex justify-between">
+                  <div class="flex flex-col h-[4vh]">
+                    <span class="text-xl inline-block">Digital Platform</span>
+                    <span class="text-xl inline-block">Rebrand</span>
+                  </div>
+
+                  <button class="block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="h-[80vw] block relative w-full pt-8">
+                <div class="absolute w-full h-full overflow-hidden z-10">
+                  <img
+                    src="./assets/images/nacho-gimeno-guerrero-P6V_0UIF0g4-unsplash.jpg"
+                    class="h-full w-full object-cover"
+                    alt="Pass the Baton project for Samsung, direction and production"
+                  />
+                </div>
+              </div>
+
+              <!-- ===== SECTION 2 ===== -->
+              <div class="px-8 flex flex-col gap-8 mt-8">
+                <h4 class="text-4xl font-bold">2</h4>
+
+                <h5 class="text-4xl flex flex-col font-bold">
+                  <span class="inline-block h-8">Samsung</span>
+                  <span class="inline-block h-8">Emirates</span>
+                </h5>
+
+                <div class="w-full flex justify-between">
+                  <div class="flex flex-col h-[4vh]">
+                    <span class="text-xl inline-block">Direction</span>
+                    <span class="text-xl inline-block">/Production</span>
+                  </div>
+
+                  <button class="block">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="h-[80vw] block relative w-full pt-8">
+                <div class="absolute w-full h-full overflow-hidden z-10">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1668383208409-ecca414341a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFnZW5jeXxlbnwwfHwwfHx8MA%3D%3D"
+                    class="h-full w-full object-cover"
+                    alt="Emirates project for Samsung, direction and production"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden lg:flex flex-col flex gap-4">
+              <h4
+                class="text-4xl lg:text-8xl slider-on-scroll-slider flex h-[6vh] lg:h-[14vh] overflow-hidden flex-col font-bold"
+              >
+                <span class="shrink-0 h-[6vh] lg:h-[14vh]">1</span>
+                <span class="shrink-0 h-[6vh] lg:h-[14vh]">2</span>
+              </h4>
+
+              <h5 class="text-4xl lg:text-8xl flex flex-col font-bold">
+                <div
+                  class="flex flex-col h-[6vh] title-on-scroll-slider lg:h-[14vh] overflow-hidden"
+                >
+                  <span
+                    class="shrink-0 h-[6vh] slide- lg:h-[14vh] inline-block h-8"
+                    >Pass</span
+                  >
+                  <span class="shrink-0 h-[6vh] lg:h-[14vh] inline-block h-8"
+                    >Samsung</span
+                  >
+                </div>
+                <div
+                  class="flex flex-col h-[6vh] description-on-scroll-slider lg:h-[14vh] overflow-hidden"
+                >
+                  <span
+                    class="shrink-0 h-[6vh] slide- lg:h-[14vh] inline-block h-8"
+                    >The Baton</span
+                  >
+                  <span
+                    class="shrink-0 h-[6vh] slide- lg:h-[14vh] inline-block h-8"
+                    >Emirates</span
+                  >
+                </div>
+              </h5>
+            </div>
+
+            <div class="hidden lg:flex flex-col mt-8 w-full">
+              <div class="w-full flex justify-between">
+                <div class="">
+                  <div
+                    class="flex flex-col slider-on-scroll-desc h-[4vh] overflow-hidden"
+                  >
+                    <span
+                      class="shrink-0 h-[4vh] animated-y-on-scroll inline-block text-xl inline-block"
+                    >
+                      Digital Platform</span
+                    >
+                    <span
+                      class="shrink-0 h-[4vh] animated-y-on-scroll inline-block text-xl inline-block"
+                    >
+                      Rebrand
+                    </span>
+                  </div>
+
+                  <div
+                    class="flex flex-col h-[4vh] slider-on-scroll-desc1 overflow-hidden"
+                  >
+                    <span
+                      class="shrink-0 h-[4vh] animated-y-on-scroll inline-block text-xl inline-block"
+                    >
+                      Direction</span
+                    >
+                    <span
+                      class="shrink-0 h-[4vh] animated-y-on-scroll inline-block text-xl inline-block"
+                    >
+                      /Production
+                    </span>
+                  </div>
+                </div>
+
+                <button class="block lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div
+                class="h-[12vw] lg:block hidden image-on-scroll-slider-thumbnail relative w-[60%] pt-8"
+              >
+                <div class="absolute w-full h-full overflow-hidden z-10">
+                  <img
+                    src="https://images.unsplash.com/photo-1782849324183-21c20ecc1996?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D"
+                    class="h-full w-full object-cover"
+                    alt="Pass the Baton project for Samsung, direction and production"
+                  />
+                </div>
+                <div class="absolute w-full h-full overflow-hidden z-0">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1668383208409-ecca414341a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFnZW5jeXxlbnwwfHwwfHx8MA%3D%3D"
+                    class="h-full w-full object-cover"
+                    alt="Pass the Baton project for Samsung, direction and production"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="w-full lg:w-1/2 hidden lg:flex flex-col image-on-scroll-slider h-screen overflow-hidden relative justify-end items-start"
+          >
+            <div class="h-screen w-full absolute inset-0 z-0">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1714674731657-05fcb6a0222a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWdlbmN5fGVufDB8fDB8fHww"
+                class="h-full object-cover w-full"
+                alt="Visual of Pass the Baton project, shot 1"
+              />
+            </div>
+            <div class="h-screen w-full absolute inset-0 z-10">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1668383208409-ecca414341a3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFnZW5jeXxlbnwwfHwwfHx8MA%3D%3D"
+                class="h-full object-cover w-full"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer
+        class="flex w-full flex-col bg-white min-h-screen overflow-hidden landing-abs-section lg:pt-0 justify-between items-center"
+        id="contact"
+        data-header-theme="dark"
+      >
+        <div class="service-section w-full px-8" id="services">
+          <div class="w-full flex py-8 lg:py-[2%] justify-between items-start">
+            <div class="flex flex-col justify-between w-full">
+              <h4
+                class="text-3xl animated-y-on-scroll lg:text-5xl md:w-8/12 xl:max-w-xl"
+              >
+                Build more trust combining the craft of design and the
+                excellence of production
+              </h4>
+
+              <a
+                href="#services"
+                class="text-lg lg:text-2xl mt-8 lg:mt-16 underline underline-offset-4"
+                ><span class="animated-y-on-scroll inline-block"
+                  >More about our services</span
+                ></a
+              >
+            </div>
+
+            <div
+              class="md:flex flex-col lg:gap-4 hidden md:w-1/2 xl:w-[40%] justify-between"
+            >
+              <div class="h-[320px] animated-image-at-scroll w-full">
+                <img
+                  src="https://images.unsplash.com/photo-1782849324183-21c20ecc1996?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D"
+                  class="h-full w-full object-cover"
+                  alt="CEO.com Social Platform Design & Development"
+                />
+              </div>
+
+              <span class="text-xl animated-y-on-scroll max-w-sm text-balance"
+                >CEO.com Social Platform Design & Develop</span
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center relative w-full">
+            <div
+              class="flex flex-col uppercase py-16 justify-center h-full items-center"
+            >
+              <div class="relative">
+                <h2
+                  class="text-[8vw] animated-y-on-scroll h-[6vh] md:h-[8vh] lg:h-[15vh] font-monumentExtended overflow-hidden relative font-extrabold"
+                >
+                  Digital
+                </h2>
+                <span
+                  class="absolute inline-block top-4 text-sm md:text-xl lg:text-xl -right-0 lg:-right-10 top-[-20px]"
+                  aria-hidden="true"
+                  >(2)</span
+                >
+              </div>
+              <div class="relative">
+                <h2
+                  class="text-[8vw] animated-y-on-scroll h-[6vh] md:h-[8vh] lg:h-[15vh] font-monumentExtended overflow-hidden relative font-extrabold"
+                >
+                  Branding
+                </h2>
+                <span
+                  class="absolute inline-block top-4 text-sm md:text-xl lg:text-xl -right-0 lg:-right-10 top-[-20px]"
+                  aria-hidden="true"
+                  >(2)</span
+                >
+              </div>
+              <div class="relative">
+                <h2
+                  class="text-[8vw] animated-y-on-scroll h-[6vh] md:h-[8vh] lg:h-[15vh] font-monumentExtended overflow-hidden relative font-extrabold"
+                >
+                  Production
+                </h2>
+                <span
+                  class="absolute inline-block top-4 text-sm md:text-xl lg:text-xl -right-0 lg:-right-10 top-[-20px]"
+                  aria-hidden="true"
+                  >(2)</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex lg:flex-row flex-col-reverse justify-between w-full px-8 bg-white items-start gap-8 lg:py-[5%] lg:h-screen description-section"
+        >
+          <div
+            class="flex flex-col-reverse lg:flex-col w-full gap-4 justify-start items-start"
+          >
+            <div
+              class="h-[300px] animated-image-on-scroll animated-image-at-scroll w-full md:w-[30%] lg:w-1/2 xl:w-1/2"
+            >
+              <img
+                src="https://plus.unsplash.com/premium_photo-1782866890249-4a9d36e7e188?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
+                class="h-full w-full object-cover"
+                alt="Ronaldo and Adam at GDC San Francisco 2022"
+              />
+            </div>
+
+            <span
+              class="relative text-xl animated-y-on-scroll max-w-xs lg:max-w-sm text-balance lg:text-2xl"
+            >
+              Ronaldo & Adam @GDC San Francisco 2022
+            </span>
+          </div>
+
+          <div class="flex flex-col w-full gap-8" id="about">
+            <p class="animated-y-on-scroll text-balance w-full">
+              <span class="text-2xl lg:text-4xl text-balance"
+                >We are a creative production studio fueled by true passion and
+                innovation.</span
+              >
+            </p>
+            <p>
+              <span class="text-2xl animated-y-on-scroll lg:text-4xl"
+                >Our mission is to revolutionize brand communications in style &
+                substance.</span
+              >
+            </p>
+
+            <a
+              href="#services"
+              class="text-lg lg:text-2xl animated-y-on-scroll inline-block mt-8 lg:mt-16 underline underline-offset-8"
+              ><span>More about our services</span></a
+            >
+          </div>
+        </div>
+
+        <div class="line-1 flex justify-between px-8 py-4 lg:py-16 w-full">
+          <h2 class="text-[10vw] animated-y-on-scroll font-monumentExtended">
+            Glow
+          </h2>
+
+          <div class="md:flex hidden flex-col gap-4">
+            <span class="text-3xl animated-y-on-scroll inline-block lg:text-5xl"
+              >Ready to Rock</span
+            >
+            <a
+              href="#contact"
+              class="underline text-3xl animated-y-on-scroll underline inline-block lg:text-5xl underline-offset-8"
+              ><span>More about our services</span></a
+            >
+          </div>
+        </div>
+
+        <div
+          class="line-2 grid grid-cols-2 gap-8 md:flex px-8 justify-between w-full items-start py-[5%] border-t"
+        >
+          <nav
+            aria-label="Site map"
+            class="flex w-full md:w-auto flex-col gap-2"
+          >
+            <span>(Navigate)</span>
+            <ul class="text-3xl md:text-4xl lg:text-6xl">
+              <li><a href="/" class="animated-y-on-scroll">Home</a></li>
+              <li><a href="#work" class="animated-y-on-scroll">Work</a></li>
+              <li>
+                <a href="#services" class="animated-y-on-scroll">Services</a>
+              </li>
+              <li><a href="#about" class="animated-y-on-scroll">About</a></li>
+              <li>
+                <a href="#contact" class="animated-y-on-scroll">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav
+            aria-label="Social networks"
+            class="flex w-full md:w-auto px-8 flex-col gap-2"
+          >
+            <span>(Connect)</span>
+            <ul class="text-3xl md:text-4xl lg:text-6xl">
+              <li>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="animated-y-on-scroll"
+                  rel="noopener noreferrer"
+                  >Instagram<span class="sr-only">
+                    (opens in a new tab)</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  class="animated-y-on-scroll"
+                  rel="noopener noreferrer"
+                  >LinkedIn<span class="sr-only"> (opens in a new tab)</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="lg:px-8 flex-col w-full md:w-auto gap-2">
+            <span>(Visit Us)</span>
+            <ul class="text-3xl md:text-4xl w-full max-w-sm lg:text-6xl">
+              <li class="animated-y-on-scroll">Miami, USA</li>
+              <li class="animated-y-on-scroll">Salt Lake, USA</li>
+              <li class="animated-y-on-scroll">São Paulo, Brazil</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="line-3 py-8 w-full px-8 flex flex-row justify-between items-end lg:items-start lg:items-center"
+        >
+          <div class="flex flex-col w-9/12 lg:flex-row justify-between">
+            <span class="animated-y-on-scroll inline-block"
+              >All rights reserved Glow 2026</span
+            >
+            <span class="animated-y-on-scroll inline-block">
+              <a class="animated-y-on-scroll inline-block" href="/privacy"
+                >Privacy Policy</a
+              >
+              /
+              <a class="animated-y-on-scroll inline-block" href="/terms"
+                >Terms</a
+              ></span
+            >
+
+            <button
+              type="button"
+              onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+              aria-label="Back to top (shortcut Shift + G)"
+              class="shrink-0 lg:mt-0 mt-8 animated-y-on-scroll inline-block text-left border-0 underline cursor-pointer"
+            >
+              Back to top
+            </button>
+          </div>
+
+          <span aria-hidden="true" class="animated-y-on-scroll inline-block"
+            >Shift + G</span
+          >
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Flip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
+  <script src="./main.js"></script>
+</html>
