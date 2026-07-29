@@ -15,3 +15,18 @@
     flex-grow: 0;
     height: 100vh;
  }
+
+
+ @media (max-width: 799px) {
+
+   .line-mask {
+     clip-path: none !important;
+     transform: none !important;
+   }
+
+   .header__link {
+     transform: none !important;
+     opacity: 1 !important;
+     visibility: visible !important;
+   }
+ }
