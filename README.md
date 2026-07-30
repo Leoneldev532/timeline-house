@@ -18,6 +18,7 @@ Explore a curated collection of open-source landing pages, section blocks, and s
 - hero04 : https://timeline-house-hero-hero04.vercel.app/
 - hero05 : https://timeline-house-hero-hero05.vercel.app/
 - hero06 : https://timeline-house-hero-hero06.vercel.app/
+- hero07 : https://timeline-house-hero-hero07.vercel.app/
 
 ## creative landing page
 
