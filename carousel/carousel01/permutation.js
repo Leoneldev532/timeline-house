@@ -10,6 +10,7 @@ window.initPermutations = function ({
     creditsList: document.querySelector(".hero__carousel-description ul"),
     firstVideo: videoFirstItem?.querySelector("video"),
     secondVideo: videoSecondItem?.querySelector("video"),
+    bgImage: document.querySelector(".hero_carousel-bg img"),
   };
 
   let currentVideoItem = videoFirstItem;
@@ -137,6 +138,10 @@ window.initPermutations = function ({
         video.src = data.video;
         video.play().catch(() => {});
       }
+      if (DOM.bgImage) {
+        const itemImg = thumbnailWrapper.children[index]?.querySelector("img");
+        if (itemImg) DOM.bgImage.src = itemImg.src;
+      }
       activeIndex = index;
       return;
     }
@@ -151,6 +156,20 @@ window.initPermutations = function ({
     if (incomingVideo) {
       incomingVideo.src = data.video;
       incomingVideo.play().catch(() => {});
+    }
+
+    if (DOM.bgImage) {
+      const itemImg = thumbnailWrapper.children[index]?.querySelector("img");
+      if (itemImg) {
+        gsap.to(DOM.bgImage, {
+          opacity: 0,
+          duration: 0.4,
+          onComplete: () => {
+            DOM.bgImage.src = itemImg.src;
+            gsap.to(DOM.bgImage, { opacity: 1, duration: 0.4 });
+          },
+        });
+      }
     }
 
     const dir = 1;

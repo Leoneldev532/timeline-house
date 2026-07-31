@@ -2,23 +2,21 @@ let scrollAnimationsContext = null;
 window.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
-  const hero__carousel_thumbnail_wrapper = document.querySelector(
+  const thumbnailWrapper = document.querySelector(
     ".hero__carousel-thumbnail-wrapper",
   );
 
-  const hero__carousel_description_video_container = document.querySelector(
+  const videoContainer = document.querySelector(
     ".hero__carousel-description-video",
   );
 
-  const hero__carousel_description_video_first_item =
-    hero__carousel_description_video_container?.querySelector(
-      ".hero__carousel-description-video-first-item",
-    );
+  const videoFirstItem = videoContainer?.querySelector(
+    ".hero__carousel-description-video-first-item",
+  );
 
-  const hero__carousel_description_video_second_item =
-    hero__carousel_description_video_container?.querySelector(
-      ".hero__carousel-description-video-second-item",
-    );
+  const videoSecondItem = videoContainer?.querySelector(
+    ".hero__carousel-description-video-second-item",
+  );
 
   const carouselData = [
     {
@@ -94,13 +92,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const cloneItems = () => {
     if (isCloned) return;
-    const items = Array.from(hero__carousel_thumbnail_wrapper.children);
+    const items = Array.from(thumbnailWrapper.children);
 
     for (let copy = 0; copy < CLONE_PASSES; copy++) {
       items.forEach((item) => {
         const clone = item.cloneNode(true);
         gsap.set(clone, { clearProps: "transform,scale,x,y,zIndex" });
-        hero__carousel_thumbnail_wrapper.appendChild(clone);
+        thumbnailWrapper.appendChild(clone);
       });
     }
     isCloned = true;
@@ -160,9 +158,9 @@ window.addEventListener("DOMContentLoaded", () => {
   if (typeof window.initPermutations === "function") {
     window.initPermutations({
       carouselData,
-      thumbnailWrapper: hero__carousel_thumbnail_wrapper,
-      videoFirstItem: hero__carousel_description_video_first_item,
-      videoSecondItem: hero__carousel_description_video_second_item,
+      thumbnailWrapper: thumbnailWrapper,
+      videoFirstItem: videoFirstItem,
+      videoSecondItem: videoSecondItem,
     });
   }
 
@@ -171,7 +169,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const initAnimationOnMobile = () => {
       return initScrollAnimation({
-        target: hero__carousel_thumbnail_wrapper,
+        target: thumbnailWrapper,
         axis: "x",
         friction: 0.7,
         wheelMultiplier: 0.05,
@@ -181,7 +179,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const initAnimationOnDesktop = () => {
       return initScrollAnimation({
-        target: hero__carousel_thumbnail_wrapper,
+        target: thumbnailWrapper,
         axis: "y",
         friction: 0.7,
         wheelMultiplier: 0.05,
