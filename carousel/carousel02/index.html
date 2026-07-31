@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Cam Hicks — Creative Production Studio</title>
+    <meta
+      name="description"
+      content="Cam Hicks is a creative production studio founded by a former Olympian and an award-winning director. Specialising in sport documentaries, commercials and cinematic storytelling."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://camhicks.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cam Hicks — Creative Production Studio" />
+    <meta
+      property="og:description"
+      content="Award-winning sport documentaries and commercials by Cam Hicks creative production studio."
+    />
+    <meta property="og:url" content="https://camhicks.com/" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.25/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="relative w-full lg:overflow-hidden bg-black text-white">
+
+    <!-- ── Skip to main content (accessibility) ── -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:rounded"
+    >
+      Skip to main content
+    </a>
+
+    <header
+      class="flex justify-between backdrop-blur-3xl lg:backdrop-blur-none z-50 items-center w-full header top-0 fixed px-8 py-4"
+      role="banner"
+    >
+      <!-- Left nav -->
+      <nav
+        class="hidden xl:flex gap-2 w-auto"
+        aria-label="Primary navigation"
+      >
+        <ul class="flex gap-2" role="list">
+          <li>
+            <a href="/" class="header__link relative">
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="/" class="header__link relative opacity-50 ">
+              <span>Work</span>
+            </a>
+          </li>
+          <li>
+            <a href="/" class="header__link relative opacity-50 ">
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Logo / brand (mobile) -->
+      <a
+        href="/"
+        class="flex xl:hidden gap-2 uppercase carlos-font"
+        aria-label="Cam Hicks — go to homepage"
+      >
+        Cam Studios
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <button
+        class="flex xl:hidden flex-col gap-2"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        id="hamburger-btn"
+      >
+        <div class="w-10 h-[2px] bg-neutral-500" aria-hidden="true"></div>
+        <div class="w-10 h-[2px] bg-neutral-500" aria-hidden="true"></div>
+      </button>
+
+      <!-- Mobile drawer -->
+      <nav
+        id="mobile-menu"
+        aria-label="Mobile navigation"
+        aria-hidden="true"
+        class="header__hamburger h-dvh transition-transform duration-300 right-0 fixed z-50 bottom-0 translate-x-[100%] w-full max-w-[280px] flex flex-col justify-end items-center"
+      >
+        <div class="flex justify-between h-1/2 w-full items-center"></div>
+      </nav>
+    </header>
+
+    <main id="main-content" class="main w-full z-10 text-white h-full">
+      <h1 class="sr-only">Cam Hicks — Creative Production Studio</h1>
+
+      <section
+        class="hero xl:flex-row flex-col w-full min-h-dvh relative"
+        aria-label="Featured projects carousel"
+      >
+        <div
+          class="hero__carousel h-full backdrop-blur-2xl relative gap-8 px-4 lg:px-0 bg-neutral-900/70 w-full flex justify-between lg:pl-8 items-center"
+        >
+          <!-- Brand / intro panel -->
+          <div
+            class="hero__carousel-title lg:flex hidden w-3/12 flex flex-col justify-end h-dvh items-center"
+          >
+            <div class="h-7/12 flex-col flex justify-between pb-8 items-start">
+              <p class="hero__title carlos-font text-4xl uppercase" aria-hidden="true">
+                <span>Cam </span>
+                <span>  studios</span>
+              </p>
+
+              <p class="hero__subtitle max-w-full">
+                A creative production studio founded by a former Olympian &amp; an
+                award‑winning director. We know sport. Filter: All Documentaries
+                Commercials
+              </p>
+            </div>
+          </div>
+
+          <!-- Project description + video panel -->
+          <div
+            class="hero__carousel-content w-full lg:w-8/12 pt-16 lg:pt-0 lg:border-l-[0.5px] lg:border-neutral-500/70 min-h-screen h-full flex xl:flex-row flex-col flex-col justify-between items-start lg:pl-8"
+          >
+            <article
+              class="hero__carousel-description w-full lg:w-8/12 lg:py-8 pb-[20vh] flex flex-col-reverse gap-4 justify-start items-start"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              <div class="flex flex-col gap-4">
+                <h2 class="text-2xl">Prove Them Wrong</h2>
+                <div class="flex flex-col gap-4 w-full">
+                  <p>
+                    "If one person deserves it and one person can do it, it's
+                    definitely the predator Franics Ngannou." In this stop‑frame
+                    style promo, the power of Francis Ngannou bares all to the
+                    world as every punch, pulsating muscle and drop of sweat are
+                    captured in incredible detail accompanied by a narration
+                    that gets the hairs on the back of your neck tingling.
+                  </p>
+                  <ul aria-label="Project credits">
+                    <li>Director: Tom Day</li>
+                    <li>Director of Photography: Arthur Lok</li>
+                    <li>Editor: Tom Day</li>
+                    <li>Producer: Arthur Lok</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Video area -->
+              <div
+                class="hero__carousel-description-video h-[44vh] relative xl:h-[50vh] overflow-hidden w-full"
+                role="region"
+                aria-label="Project preview video"
+              >
+                <!-- Slot 1 (current) -->
+                <div
+                  class="hero__carousel-description-video-first-item absolute inset-0 w-full"
+                >
+                  <div
+                    class="hero__carousel-description-video-wrapper h-[44vh] relative xl:h-[50vh] overflow-hidden rounded-xl bg-black"
+                  >
+                    <video
+                      src=""
+                      muted
+                      loop
+                      playsinline
+                      class="w-full h-full object-cover absolute inset-0"
+                      aria-label="Project preview video"
+                    ></video>
+
+                    <button
+                      class="toggle__player-button absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-3xl rounded-full flex justify-center items-center h-14 w-14 transition-colors hover:bg-white/30 z-10 pointer-events-auto"
+                      aria-label="Pause video"
+                      aria-pressed="false"
+                    >
+                      <!-- pause icon (shown when playing) -->
+                      <svg data-icon="pause" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="4" width="4" height="16" rx="1" fill="currentColor"/>
+                        <rect x="15" y="4" width="4" height="16" rx="1" fill="currentColor"/>
+                      </svg>
+                      <!-- play icon (shown when paused) -->
+                      <svg data-icon="play" class="hidden" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 5.91704L18.5833 11.5L8.5 17.083V5.91704Z" fill="currentColor"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Slot 2 (incoming) -->
+                <div
+                  class="hero__carousel-description-video-second-item absolute inset-0 w-full"
+                >
+                  <div
+                    class="hero__carousel-description-video-wrapper h-[44vh] relative xl:h-[50vh] overflow-hidden rounded-xl bg-black"
+                  >
+                    <video
+                      src=""
+                      muted
+                      loop
+                      playsinline
+                      class="w-full h-full object-cover absolute inset-0"
+                      aria-label="Project preview video (incoming)"
+                    ></video>
+
+                    <button
+                      class="toggle__player-button absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-3xl rounded-full flex justify-center items-center h-14 w-14 transition-colors hover:bg-white/30 z-10 pointer-events-auto"
+                      aria-label="Pause video"
+                      aria-pressed="false"
+                    >
+                      <svg data-icon="pause" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="5" y="4" width="4" height="16" rx="1" fill="currentColor"/>
+                        <rect x="15" y="4" width="4" height="16" rx="1" fill="currentColor"/>
+                      </svg>
+                      <svg data-icon="play" class="hidden" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 5.91704L18.5833 11.5L8.5 17.083V5.91704Z" fill="currentColor"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Thumbnail strip -->
+        <nav
+          class="hero__carousel-thumbnail p-4 h-[120px] right-0 overflow-hidden fixed bottom-0 lg:h-dvh border-t lg:border-l border-neutral-700/70 backdrop-blur-2xl flex lg:flex-row flex-col justify-start items-start overflow-hidden w-full lg:w-[10vw] xl:w-[120px]"
+          aria-label="Project thumbnails"
+        >
+          <div
+            class="w-[20px] h-[2px] mt-1 rounded-full lg:hidden block bg-neutral-700/70 absolute top-0 -translate-x-1/2 left-1/2"
+            aria-hidden="true"
+          ></div>
+
+          <div
+            class="hero__carousel-thumbnail-wrapper flex flex-row lg:flex-col justify-start items-start h-full w-max lg:w-full lg:h-max"
+            role="list"
+          >
+            <div
+              class="hero__carousel-item shrink-0 grow-0 self-start w-[15vw] lg:w-full h-full lg:h-[120px] basis-auto mr-4 lg:mr-0 lg:mb-4"
+              role="listitem"
+            >
+              <button class="w-full h-full" aria-label="View project: Neon Genesis">
+                <img
+                  src="https://cdn.prod.website-files.com/671016cc9bff6eb0ecc694ef/67e383b0d6672afd60dbed40_DSC_5377-p-500.webp"
+                  alt="Neon Genesis — thumbnail"
+                  class="w-full h-full object-cover block aspect-[4/5]"
+                />
+              </button>
+            </div>
+
+            <div
+              class="hero__carousel-item shrink-0 grow-0 self-start w-[15vw] lg:w-full h-full lg:h-[120px] basis-auto mr-4 lg:mr-0 lg:mb-4"
+              role="listitem"
+            >
+              <button class="w-full h-full" aria-label="View project: Echoes of Silence">
+                <img
+                  src="https://images.unsplash.com/photo-1778470075441-8b2c7ce123b7?w=500&auto=format&fit=crop&q=60"
+                  alt="Echoes of Silence — thumbnail"
+                  class="w-full h-full object-cover block aspect-[4/5]"
+                />
+              </button>
+            </div>
+
+            <div
+              class="hero__carousel-item shrink-0 grow-0 self-start w-[15vw] lg:w-full h-full lg:h-[120px] basis-auto mr-4 lg:mr-0 lg:mb-4"
+              role="listitem"
+            >
+              <button class="w-full h-full" aria-label="View project: Apex - Beyond Limits">
+                <img
+                  src="https://images.unsplash.com/photo-1784288195848-bc8fa9b5d89d?w=500&auto=format&fit=crop&q=60"
+                  alt="Apex - Beyond Limits — thumbnail"
+                  class="w-full h-full object-cover block aspect-[4/5]"
+                />
+              </button>
+            </div>
+
+            <div
+              class="hero__carousel-item shrink-0 grow-0 self-start w-[15vw] lg:w-full h-full lg:h-[120px] basis-auto mr-4 lg:mr-0 lg:mb-4"
+              role="listitem"
+            >
+              <button class="w-full h-full" aria-label="View project: Horizon - A New Dawn">
+                <img
+                  src="https://images.unsplash.com/photo-1782241594367-31847ff5b0e1?w=500&auto=format&fit=crop&q=60"
+                  alt="Horizon - A New Dawn — thumbnail"
+                  class="w-full h-full object-cover block aspect-[4/5]"
+                />
+              </button>
+            </div>
+
+            <div
+              class="hero__carousel-item shrink-0 grow-0 self-start w-[15vw] lg:w-full h-full lg:h-[120px] basis-auto mr-4 lg:mr-0 lg:mb-4"
+              role="listitem"
+            >
+              <button class="w-full h-full" aria-label="View project: The Ultimate Challenge">
+                <img
+                  src="https://images.pexels.com/photos/10276044/pexels-photo-10276044.jpeg"
+                  alt="The Ultimate Challenge — thumbnail"
+                  class="w-full h-full object-cover block aspect-[4/5]"
+                />
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Background image (decorative) -->
+        <div
+          class="hero_carousel-bg absolute w-full top-0 h-dvh -z-10"
+          aria-hidden="true"
+        >
+          <img
+            src="https://cdn.prod.website-files.com/671016cc9bff6eb0ecc694ef/67e383b0d6672afd60dbed40_DSC_5377-p-500.webp"
+            alt=""
+            class="w-full h-full object-cover block aspect-[4/5]"
+          />
+        </div>
+      </section>
+    </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/Flip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
+  <script src="./permutation.js"></script>
+  <script src="./main.js"></script>
+</html>

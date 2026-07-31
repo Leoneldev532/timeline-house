@@ -1,0 +1,64 @@
+   @font-face {
+    font-family: "NeueHaasGroteskDisplay";
+    src: url("./assets/fonts/b63e85fe250c7eb1-s.p.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+   }
+
+      @font-face {
+    font-family: "CalosFont";
+    src: url("./assets/fonts/d1b1fbd0793dc558-s.p.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+   }
+
+
+   h3,h4,h5,button,p,span,li,a{
+    font-family: "NeueHaasGroteskDisplay", sans-serif;
+   }
+
+   h1,h2{
+    font-family: "CalosFont" !important;
+   }
+
+   h1 * , h2 *{
+    font-family: "CalosFont" !important;
+   }
+
+
+   .carlos-font{
+    
+    font-family: "CalosFont" !important; 
+   }
+   
+   
+   .hero__gallery-cover-container {
+      transform-origin: bottom;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    } 
+
+
+    .hero__carousel-thumbnail {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.hero__carousel-item img {
+  filter: brightness(0.5);
+  transition: filter 0.4s ease;
+}
+
+.hero__carousel-item:hover img {
+  filter: brightness(1);
+}
