@@ -36,8 +36,8 @@
   transform: translate(-50%, -20%) scale(0.6);
   will-change: transform, opacity;
   transition:
-    opacity 0.5s ease,
-    transform 0.5s ease;
+    opacity 0.5s none,
+    transform 0.5s none;
 }
 
 .cursor-dot[aria-hidden="true"] {

@@ -66,7 +66,7 @@ window.addEventListener("DOMContentLoaded", () => {
   let lastMoveTime = 0;
   let inertiaFrame = null;
 
-  const friction = 0.85;
+  const friction = 0.9;
   const stopThreshold = 0.05;
 
   const maxDragVelocity = 150;
@@ -117,11 +117,11 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // suivi souris global (lissé)
   const setDotX = gsap.quickTo(cursorDot, "x", {
-    duration: 0.2,
+    duration: 0.1,
     ease: "none",
   });
   const setDotY = gsap.quickTo(cursorDot, "y", {
-    duration: 0.2,
+    duration: 0.1,
     ease: "none",
   });
 
