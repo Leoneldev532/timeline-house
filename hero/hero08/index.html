@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero 08 — Cinematic Gallery | Timeline House</title>
+    <meta
+      name="description"
+      content="A cinematic project gallery by Timeline House. Explore curated films, director's cuts, and visual stories with smooth video previews."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.scrollTo(0, 0);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.25/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="relative bg-black w-full h-full antialiased">
+    <header class="absolute top-0 left-0 w-full z-30 pointer-events-none">
+      <h1
+        class="text-2xl lg:text-4xl absolute top-10 left-5 lg:left-10 font-bold text-white max-w-48"
+      >
+        Timeline House
+      </h1>
+
+      <button
+        class="hamburger-btn absolute top-15 right-10 lg:right-20 cursor-pointer pointer-events-auto"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="main-menu"
+      >
+        <span class="sr-only">Menu</span>
+        <div class="h-0.5 line-1 w-10 mb-2 bg-white block"></div>
+        <div class="h-0.5 line-2 w-10 bg-white block"></div>
+      </button>
+    </header>
+
+    <nav
+      id="main-menu"
+      class="main-menu"
+      aria-label="Site navigation"
+      aria-hidden="true"
+    >
+      <ul class="main-menu-list">
+        <li><a href="https://timeline-house-hero-hero01.vercel.app/">Hero 01</a></li>
+        <li><a href="https://timeline-house-hero-hero02.vercel.app/">Hero 02</a></li>
+        <li><a href="https://timeline-house-hero-hero03.vercel.app/">Hero 03</a></li>
+        <li><a href="https://timeline-house-hero-hero04.vercel.app/">Hero 04</a></li>
+        <li><a href="https://timeline-house-hero-hero05.vercel.app/">Hero 05</a></li>
+        <li><a href="https://timeline-house-hero-hero06.vercel.app/">Hero 06</a></li>
+        <li><a href="https://timeline-house-hero-hero07.vercel.app/">Hero 07</a></li>
+        <li><a href="https://timeline-house-mu.vercel.app/">Landing 01</a></li>
+        <li><a href="https://timeline-house-landing-landing02.vercel.app/">Landing 02</a></li>
+        <li><a href="https://timeline-house-carousel-carousel01.vercel.app/">Carousel 01</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="infinite-scroll-container overflow-hidden h-screen w-full">
+        <div
+          class="grid-section overflow-hidden! h-screen w-full"
+          role="list"
+          aria-label="Project gallery"
+        ></div>
+      </div>
+    </main>
+  </body>
+
+  <style>
+    .card {
+      rotate: 5deg;
+    }
+    body {
+      overflow: hidden;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .main-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      background: rgba(0, 0, 0, 0.92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+    }
+
+    .main-menu.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .main-menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .main-menu-list li {
+      margin: 1rem 0;
+    }
+
+    .main-menu-list a {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      outline: none;
+    }
+
+    .main-menu-list a:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 4px;
+    }
+
+    .card:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.85);
+      outline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .card,
+      .cursor-dot,
+      .main-menu {
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+  <script src="./main.js"></script>
+</html>
