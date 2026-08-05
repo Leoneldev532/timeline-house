@@ -19,6 +19,7 @@ Explore a curated collection of open-source landing pages, section blocks, and s
 - hero05 : https://timeline-house-hero-hero05.vercel.app/
 - hero06 : https://timeline-house-hero-hero06.vercel.app/
 - hero07 : https://timeline-house-hero-hero07.vercel.app/
+- hero08 : https://timeline-house-hero-hero08.vercel.app/
 
 ## creative landing page
 
@@ -27,7 +28,7 @@ Explore a curated collection of open-source landing pages, section blocks, and s
 
 ## creative Carousel
 
-- landing01 : https://timeline-house-carousel-carousel01.vercel.app/
+- carousel01 : https://timeline-house-carousel-carousel01.vercel.app/
 
 ////////////////////////////////////
 Code By Léonel Yimga also called Leoy
