@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Thibaud Fellay — Direction Artistique &amp; Production Audiovisuelle
+    </title>
+    <meta
+      name="description"
+      content="Portfolio de Thibaud Fellay, directeur artistique et producteur audiovisuel. Films, campagnes et commissions pour Nike, Apple, Porsche et plus."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Thibaud Fellay" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Thibaud Fellay — Direction Artistique &amp; Production Audiovisuelle"
+    />
+    <meta
+      property="og:description"
+      content="Films, campagnes et commissions audiovisuelles par Thibaud Fellay."
+    />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://thibaudfellay.com/" />
+
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.scrollTo(0, 0);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.25/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="text-white h-auto min-h-screen w-full relative">
+    <!-- 1. Arrière-plan global -->
+    <div class="absolute inset-0 w-full h-screen z-0">
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="w-full h-full object-cover bg-video z-0 fixed opacity-60 mix-blend-overlay"
+      >
+        <source
+          src="https://res.cloudinary.com/dx1axx1s2/video/upload/v1785312352/From_Klickpin.com-_831969731199293419-pin-id-831969731199293419_rfht8c.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="fixed top-0 left-0 w-full min-h-screen bg-overlay z-10"></div>
+    </div>
+
+    <nav
+      class="fixed z-20 w-full flex justify-between gap-2 items-start px-6 lg:px-10 py-8 text-[10px] uppercase"
+    >
+      <!-- Logo / Nom -->
+      <div
+        class="w-full h-8 flex text-xs lg:text-sm items-center lg:border-b border-white"
+      >
+        THIBAUD FELLAY
+      </div>
+
+      <!-- Menu Travaux -->
+      <div class="w-full flex relative flex-col">
+        <div
+          class="w-full h-8 relative flex items-center lg:border-b border-white"
+        >
+          <span class="flex-1 text-xs lg:text-sm">WORKS (13)</span>
+          <div class="hidden lg:flex gap-2 py-3">
+            <span
+              class="bg-white text-black px-1 leading-none py-0.5 rounded-sm cursor-pointer"
+              >GRID</span
+            >
+            <span
+              class="text-gray-400 hover:text-white cursor-pointer transition"
+              >LIST</span
+            >
+          </div>
+        </div>
+
+        <ul
+          class="hidden lg:flex flex-col absolute top-8 left-0 translate-x-0 gap-0.5 text-sm font-medium mt-4"
+        >
+          <li>ALL WORKS</li>
+          <li>FILMS</li>
+          <li>CAMPAIGNS</li>
+          <li>COMMISSIONS</li>
+        </ul>
+      </div>
+
+      <ul
+        class="lg:hidden flex flex-col absolute top-8 left-6 top-16 translate-x-0 gap-0.5 text-sm font-medium mt-4"
+      >
+        <li>ALL WORKS</li>
+        <li>FILMS</li>
+        <li>CAMPAIGNS</li>
+        <li>COMMISSIONS</li>
+      </ul>
+      <!-- Liens simples -->
+      <div
+        class="w-full h-8 flex text-sm lg:justify-start justify-end items-center border-b border-white/50 lg:border-white cursor-pointer hover:text-gray-300 transition"
+      >
+        <span> ABOUT</span>
+      </div>
+
+      <div
+        class="w-full h-8 flex items-center text-sm justify-end border-b border-white/50 lg:border-white text-right cursor-pointer hover:text-gray-300 transition"
+      >
+       <span>CONTACT/span> 
+      </div>
+    </nav>
+
+    <div
+      class="fixed top-1/2 left-0 transform w-full hidden lg:flex -translate-y-1/2 z-10 items-center gap-4"
+    >
+      <div class="h-28 flex justify-center items-center w-full overflow-hidden">
+        <div
+          class="flex flex-col hero-title-wrapper w-full h-full text-center shrink-0"
+        ></div>
+      </div>
+    </div>
+
+    <div
+      class="bottom-5 lg:bottom-10 left-4 lg:left-8 w-[calc(100%-2rem)] lg:w-[370px] bg-white rounded-lg p-2 fixed justify-between flex items-center gap-4 z-50"
+    >
+      <div class="flex gap-2">
+        <div class="h-12 w-18 rounded-lg overflow-hidden">
+          <div class="flex flex-col project-image-wrapper h-12">
+            <!-- Images injectées par JS -->
+          </div>
+        </div>
+        <div class="flex flex-col justify-center items-start">
+          <span class="text-xs text-gray-500 project-client"> Nike</span>
+          <h3 class="font-medium text-gray-700 project-name text-xs">
+            RUN THE FUTURE
+          </h3>
+          <span class="text-xs text-gray-500 project-duration"> 00:04:00 </span>
+        </div>
+      </div>
+      <div
+        class="h-7 w-7 flex justify-center bg-gray-100 rounded-full items-center"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#000"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          class="size-5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- H1 caché pour le SEO (structure sémantique) -->
+    <h1 class="sr-only">
+      Thibaud Fellay — Réalisateur &amp; Directeur Artistique
+    </h1>
+
+    <div
+      class="relative w-full scroll-container md:pt-[10%] flex px-8 flex-col min-h-screen inset-0"
+    ></div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/TextPlugin.min.js"></script>
+  <script src="./main.js"></script>
+</html>

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "saol";
+  src: url("./fonts/SaolDisplay-RegularItalic.f08b42.woff2") format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LayGrotesk";
+  src: url("./fonts/LayGrotesk-Regular.eab05c.woff2") format(woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-saol {
+  font-family: "saol" !important;
+}
+
+.font-laygrotesk {
+  font-family: "LayGrotesk" !important;
+}
+
+body {
+  font-family: "LayGrotesk", sans-serif;
+  background-color: #0a0a0a;
+}
+
+.font-serif-italic {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
