@@ -126,8 +126,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const projectImageWrapper = document.querySelector(".project-image-wrapper");
   const projectDuration = document.querySelector(".project-duration");
 
-  let projectImageItemHeight;
-
   const bgVideo = document.querySelector(".bg-video");
   const bgVideoSource = bgVideo.querySelector("source");
 
