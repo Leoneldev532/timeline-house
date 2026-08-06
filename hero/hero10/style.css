@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "PPNeueMontreal";
+  src: url("./assets/font/PPNeueMontreal-Bold.5f249a.woff2");
+  font-weight: 400;
+}
+
+body {
+  font-family: "PPNeueMontreal", sans-serif;
+}
+
+.font-serif-italic {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+.word {
+  overflow: hidden;
+}
