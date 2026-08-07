@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero 11 - Cinematic Animation | NWPROD</title>
+    <meta
+      name="description"
+      content="Discover Hero 11, a cinematic gallery animation with seamless transitions. Audiovisual production house."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <script>
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.scrollTo(0, 0);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.25/dist/lenis.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body class="text-white h-auto w-full bg-gray-100 relative">
+    <div class="hero w-full relative overflow-hidden h-screen">
+      <section
+        class="w-full hero-background-overlay z-10 top-0 left-0 absolute h-screen"
+      >
+        <img
+          src="https://i.pinimg.com/1200x/97/62/b4/9762b42f5307553f078b372efa4b59e1.jpg"
+          alt=""
+          class="w-full h-full object-cover object-center"
+          srcset=""
+        />
+      </section>
+
+      <section class="w-full top-0 left-0 absolute h-screen">
+        <div
+          class="w-full h-full flex relative justify-center items-center flex-col gap-4"
+        >
+          <h2 class="text-9xl hero-big-title text-black max-w-8/12 text-center">
+            Cinematic
+          </h2>
+
+          <h2
+            class="text-4xl hero-title text-black text-balance max-w-4xl text-center"
+          >
+            Explore the art of cinematic storytelling.
+          </h2>
+
+          <p
+            class="text-2xl hero-description inline-block text-balance text-center text-black max-w-xl"
+          >
+            Immersive visual experiences crafted with passion and precision to
+            bring your ideas to life.
+          </p>
+        </div>
+
+        <div
+          class="grid hero-gallery-grid absolute z-0 top-0 left-0 h-screen px-[10%] w-full gap-y-[4rem] lg:gap-y-[8rem] gap-x-[1rem] lg:gap-x-[4rem] grid-cols-3"
+        ></div>
+      </section>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+  <script src="./main.js"></script>
+</html>
